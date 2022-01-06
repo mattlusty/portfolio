@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "mymoon";
+  src: url("./fonts/mymoon.eot?pv07qr");
+  src: url("./fonts/mymoon.eot?pv07qr#iefix") format("embedded-opentype"),
+    url("./fonts/mymoon.ttf?pv07qr") format("truetype"), url("./fonts/mymoon.woff?pv07qr") format("woff"),
+    url("./fonts/mymoon.svg?pv07qr#mymoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change ./fonts */
+  font-family: "mymoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-leaf:before {
+  content: "\e900";
+}
+.icon-user:before {
+  content: "\e901";
+}
+.icon-chevron:before {
+  content: "\e902";
+}
+.icon-menu:before {
+  content: "\e903";
+}
+.icon-times:before {
+  content: "\e904";
+}
+.icon-home:before {
+  content: "\e905";
+}
