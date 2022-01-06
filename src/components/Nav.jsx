@@ -16,6 +16,7 @@ class Nav extends Component {
             <li>CV</li>
           </ul>
         </div>
+        <div className="mobileMenuToggle">x</div>
       </div>
     );
   }
