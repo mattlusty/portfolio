@@ -12,6 +12,8 @@
 
 .SideMenu .header {
   padding: 10px;
+  font-family: "sam";
+  font-size: 2rem;
 }
 
 .SideMenu .header .inner {
