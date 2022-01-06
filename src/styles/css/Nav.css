@@ -7,12 +7,14 @@
 
 .Nav .title {
   display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid red;
-  border-radius: 5px;
-  margin: 0 20px 0 20px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
   font-size: 2rem;
   height: 50px;
+  width: 230px;
 }
 
 .Nav .menu {
@@ -35,7 +37,7 @@
   margin: auto 0;
 }
 
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 790px) {
   .Nav .mobileMenuToggle {
     display: none;
   }
