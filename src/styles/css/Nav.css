@@ -1,0 +1,40 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.467);
+}
+
+.Nav .title {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: auto 40px;
+  font-size: 2rem;
+}
+
+.Nav .menu {
+  display: none;
+}
+
+.Nav > * {
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 710px) {
+  .Nav .menu {
+    display: flex;
+  }
+  .Nav .menu ul {
+    display: flex;
+  }
+  .Nav .menu li {
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  .Nav .menu li:last-child {
+    margin-right: 40px;
+  }
+}
