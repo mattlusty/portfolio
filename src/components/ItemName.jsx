@@ -6,6 +6,7 @@ class ItemName extends Component {
   render() {
     return (
       <div className="ItemName">
+        <i className={`icon-${this.props.name}`}></i>
         <span className="itemLabel">{this.props.label}</span>
       </div>
     );

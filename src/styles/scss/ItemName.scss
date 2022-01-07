@@ -16,6 +16,14 @@
   cursor: pointer;
 }
 
+.ItemName i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // .level-1 > .ItemName {
 //   background-color: var(--color-bg-tier1);
 //   color: var(--color-f-tier1);
@@ -35,6 +43,7 @@
 
 .itemLabel {
   flex-shrink: 0;
+  margin-left: 10px;
 }
 
 // .ItemName .buttonIcon {

@@ -12,6 +12,15 @@
   cursor: pointer;
 }
 
+.ItemName i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .itemLabel {
   flex-shrink: 0;
+  margin-left: 10px;
 }
