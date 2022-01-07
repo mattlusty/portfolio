@@ -1,4 +1,16 @@
 .SideMenu {
+  transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.SideMenu {
+  width: 250px;
+}
+
+.SideMenu.hidden {
+  width: 0px;
+}
+
+.SideMenu {
   border-right: 1px solid red;
   background-color: rgba(245, 245, 245, 0.692);
   position: fixed;
@@ -8,6 +20,7 @@
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .SideMenu .header {

@@ -6,18 +6,18 @@ import ItemName from "./ItemName";
 
 class SideMenu extends Component {
   render() {
-    // let { hidden, fullClose } = this.props.sideMenu;
+    let hidden = this.props.hidden ? "hidden" : "";
     return (
-      <div className="SideMenu">
+      <div className={`SideMenu ${hidden}`}>
         <div className="sideMenu">
           <div className="header">
             <div className="inner">Menu</div>
           </div>
           <div className="items">
-            <ItemName label="About" />
-            <ItemName label="Portfolio" />
-            <ItemName label="Contact" />
-            <ItemName label="CV" />
+            <ItemName name="home" label="About" />
+            <ItemName name="leaf" label="Portfolio" />
+            <ItemName name="leaf" label="Contact" />
+            <ItemName name="leaf" label="CV" />
           </div>
         </div>
       </div>

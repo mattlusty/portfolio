@@ -1,19 +1,19 @@
-// .SideMenu {
-//   flex-shrink: 0;
-//   transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
-// }
+.SideMenu {
+  // flex-shrink: 0;
+  transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
 
-// .SideMenu.fullClose {
-//   width: 242px; // (originally 250px - then 300px)
-// }
+.SideMenu {
+  width: 250px; // (originally 250px - then 300px)
+}
 
 // .SideMenu.partClose {
 //   width: 252px; // (originally 250px - then 300px)
 // }
 
-// .SideMenu.hidden.fullClose {
-//   width: 0px;
-// }
+.SideMenu.hidden {
+  width: 0px;
+}
 
 // .SideMenu.hidden.partClose {
 //   width: calc(var(--height-primary) + var(--pad) * 2);
@@ -39,6 +39,7 @@
   // DISPLAY
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   // flex-shrink: 0; // not needed
 
   // OTHER

@@ -16,7 +16,9 @@ class Nav extends Component {
             <li>CV</li>
           </ul>
         </div>
-        <div className="mobileMenuToggle">x</div>
+        <div className="mobileMenuToggle" onClick={this.props.toggleMenu}>
+          <i className="icon-times"></i>
+        </div>
       </div>
     );
   }
