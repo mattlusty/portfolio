@@ -1,0 +1,116 @@
+.SideMenu {
+  // flex-shrink: 0;
+  transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.SideMenu {
+  width: 250px; // (originally 250px - then 300px)
+}
+
+// .SideMenu.partClose {
+//   width: 252px; // (originally 250px - then 300px)
+// }
+
+.SideMenu.hidden {
+  width: 0px;
+}
+
+// .SideMenu.hidden.partClose {
+//   width: calc(var(--height-primary) + var(--pad) * 2);
+// }
+
+.SideMenu {
+  border: 1px solid rgb(150, 150, 150);
+  background-color: rgba(245, 245, 245, 0.692);
+
+  // POSITION
+  position: fixed; //not needed now
+  top: 0;
+
+  // MAIN
+  width: 250px; // (252px - originally) (300px - was then this) (242px - with no logo left margin)
+  height: 100vh;
+  // overflow: hidden; // not needed
+
+  // overflow: hidden;
+  box-sizing: content-box;
+  // z-index: 999;
+
+  // DISPLAY
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // flex-shrink: 0; // not needed
+
+  // OTHER
+  // transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+
+  // STYLE
+  // box-shadow: var(--shad-lighter);
+}
+
+.SideMenu .header {
+  padding: 10px;
+  font-family: "sam";
+  font-size: 2rem;
+}
+
+.SideMenu .header .inner {
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  background-color: white;
+
+  //
+  display: flex;
+  align-items: center;
+  //
+  height: 50px;
+  overflow: hidden;
+  //
+  padding: 0 10px;
+  //
+  cursor: pointer;
+}
+
+.SideMenu.fullClose .sideMenu {
+  width: 242px;
+}
+
+.SideMenu.partClose .sideMenu {
+  width: 252px;
+}
+
+// // for fully collapsing sideMenu (ie logo has no left margin)
+// .SideMenu .partCollapse {
+//   width: 252px;
+// }
+
+// .SideMenu .fullCollapse {
+//   width: 242px;
+// }
+
+.SideMenu.hidden.partClose .sideMenu {
+  width: calc(var(--height-primary) + var(--pad) * 2); // (originally 58px - for complete collapse 0px)
+}
+
+.SideMenu.hidden.fullClose .sideMenu {
+  // width: calc(var(--height-primary) + var(--pad) * 2); // (originally 58px - for complete collapse 0px)
+  width: 0px;
+}
+
+// .side-menu.hidden {
+//   // width: calc(var(--height-primary) + var(--pad) * 2);
+//   width: 0px;
+// }
+
+.menuHeader {
+  box-shadow: var(--shad-lighter);
+  border-bottom: 1px solid var(--color-menu-border);
+}
+
+@media only screen and (min-width: 790px) {
+  .SideMenu {
+    display: none;
+  }
+}

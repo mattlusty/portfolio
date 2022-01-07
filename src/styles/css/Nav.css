@@ -1,0 +1,65 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
+  padding: 10px 0;
+}
+
+.Nav .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #969696;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  font-family: "sam";
+  font-size: 2.7rem;
+  height: 50px;
+  width: 230px;
+}
+
+.Nav .menu {
+  display: none;
+}
+
+.Nav .mobileMenuToggle {
+  border: 1px solid #969696;
+  border-radius: 5px;
+  height: 50px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Nav > * {
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 790px) {
+  .Nav .mobileMenuToggle {
+    display: none;
+  }
+  .Nav .menu {
+    display: flex;
+    height: 50px;
+  }
+  .Nav .menu ul {
+    display: flex;
+  }
+  .Nav .menu li {
+    border: 1px solid #969696;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .Nav .menu li:last-child {
+    margin-right: 20px;
+  }
+}

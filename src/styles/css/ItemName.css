@@ -1,0 +1,26 @@
+.ItemName {
+  border: 1px solid #969696;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  overflow: hidden;
+  margin: 10px 10px 15px 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.ItemName i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemLabel {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
