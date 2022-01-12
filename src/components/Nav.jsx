@@ -13,12 +13,12 @@ class Nav extends Component {
       <div className="Nav">
         <div className="title">Matthew Lusty</div>
         <div className="middle"></div>
-        <div className="menu" onClick={this.navSelect}>
+        <div className="menu">
           <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>CV</li>
+            <li onClick={this.navSelect}>About</li>
+            <li onClick={this.navSelect}>Portfolio</li>
+            <li onClick={this.navSelect}>Contact</li>
+            <li onClick={this.navSelect}>CV</li>
           </ul>
         </div>
         <div className="mobileMenuToggle" onClick={this.props.toggleMenu}>
