@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 // style
 import "../styles/css/Nav.css";
+import { withRouter } from "react-router-dom";
 
 class Nav extends Component {
+  navSelect = (e) => {
+    this.props.history.push(e.target.innerHTML);
+  };
+
   render() {
     return (
       <div className="Nav">
         <div className="title">Matthew Lusty</div>
         <div className="middle"></div>
-        <div className="menu">
+        <div className="menu" onClick={this.navSelect}>
           <ul>
             <li>About</li>
             <li>Portfolio</li>
@@ -24,4 +29,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default withRouter(Nav);
