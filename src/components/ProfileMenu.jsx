@@ -11,7 +11,7 @@ function ProfileMenu(props) {
       </div>
       <div className={`profileMenu ${props.closed ? "closed" : ""}`}>
         <div className="header">
-          <div className="icon">D</div>
+          <div className="icon">P</div>
           <div className="user">mattlusty123</div>
         </div>
         <ul className="items">
