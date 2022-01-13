@@ -39,7 +39,7 @@
   margin: auto 0;
 }
 
-@media only screen and (min-width: 790px) {
+@media only screen and (min-width: 890px) {
   .Nav .mobileMenuToggle {
     display: none;
   }
@@ -58,6 +58,14 @@
     margin: 0 20px;
     padding: 10px 20px;
     cursor: pointer;
+  }
+  .Nav .menu .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 100%;
+    width: 50px;
   }
   .Nav .menu li:last-child {
     margin-right: 20px;

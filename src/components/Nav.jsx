@@ -19,6 +19,7 @@ class Nav extends Component {
             <li onClick={this.navSelect}>Portfolio</li>
             <li onClick={this.navSelect}>Contact</li>
             <li onClick={this.navSelect}>CV</li>
+            <li className="profile">X</li>
           </ul>
         </div>
         <div className="mobileMenuToggle" onClick={this.props.toggleMenu}>
