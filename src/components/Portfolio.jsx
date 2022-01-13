@@ -25,11 +25,11 @@ function Portfolio(props) {
       <div className="item">
         <div className="header">Stella Notes</div>
         <div className="content">
-          No longer do your vast expanses of detailed notes need to be spread across miles of note-space. Stella notes
-          collapses an interstella set notes into a condensed smart folding structure. Now you can collect and organise
-          expansive reams of notes whilst retaining sight of it all in. Easy to navigate, search, edit and consume large
-          collections of data utilising multi-level nested folding structure. All your notes at your fingers tips at
-          lightening speed.
+          No longer are your vast collections of detailed notes spread across miles of note-space. Stella notes
+          collapses interstella distances between different regions within large notes with a smart folding structure.
+          Now you can collect and organise expansive reams of notes whilst retaining sight of it all in. Easy to
+          navigate, search, edit and consume large collections of data utilising multi-level nested folding structure.
+          All your notes at your fingers tips at lightening speed.
         </div>
       </div>
       <div className="item">
