@@ -11,14 +11,14 @@ import CV from "./components/CV";
 function App() {
   let [hidden, setHidden] = useState(false);
 
-  let toggleMenu = () => {
+  let toggleSideMenu = () => {
     setHidden(!hidden);
   };
 
   return (
     <div className="App">
-      <Nav toggleMenu={toggleMenu} />
-      <SideMenu toggleMenu={toggleMenu} hidden={hidden} />
+      <Nav toggleSideMenu={toggleSideMenu} />
+      <SideMenu toggleSideMenu={toggleSideMenu} hidden={hidden} />
       <Switch>
         <Route path="/portfolio">
           <Portfolio> </Portfolio>

@@ -2,28 +2,40 @@ import React, { Component } from "react";
 // style
 import "../styles/css/Nav.css";
 import { withRouter } from "react-router-dom";
+// components
+import ProfileMenu from "./ProfileMenu";
 
 class Nav extends Component {
+  state = { profileMenu: { hidden: false, closed: true } };
+
   navSelect = (e) => {
     this.props.history.push(e.target.innerHTML);
+  };
+
+  toggleProfileMenu = () => {
+    console.log("helo");
+    this.setState({ profileMenu: { ...this.state.profileMenu, closed: !this.state.profileMenu.closed } });
   };
 
   render() {
     return (
       <div className="Nav">
         <div className="title">Matthew Lusty</div>
-        <div className="middle"></div>
-        <div className="menu">
-          <ul>
+        <div className="rightSide">
+          <ul className="menu">
             <li onClick={this.navSelect}>About</li>
             <li onClick={this.navSelect}>Portfolio</li>
             <li onClick={this.navSelect}>Contact</li>
             <li onClick={this.navSelect}>CV</li>
-            <li className="profile">X</li>
           </ul>
-        </div>
-        <div className="mobileMenuToggle" onClick={this.props.toggleMenu}>
-          <i className="icon-times"></i>
+          <ProfileMenu
+            hidden={this.state.profileMenu.hidden}
+            closed={this.state.profileMenu.closed}
+            toggleProfileMenu={this.toggleProfileMenu}
+          />
+          <div className="mobileMenuToggle" onClick={this.props.toggleSideMenu}>
+            <i className="icon-times"></i>
+          </div>
         </div>
       </div>
     );

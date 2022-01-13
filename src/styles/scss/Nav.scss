@@ -1,8 +1,9 @@
 // using .Nav .title ... height = 50px
 
 .Nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // justify-content: space-between;
   // height: 100px;
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
   padding: 10px 0;
@@ -19,6 +20,10 @@
   font-size: 2.7rem;
   height: 50px;
   width: 230px;
+}
+
+.Nav > .rightSide {
+  display: flex;
 }
 
 .Nav .menu {
@@ -52,28 +57,27 @@
     height: 50px;
   }
 
-  .Nav .menu ul {
+  .Nav > ul.menu {
     display: flex;
   }
 
-  .Nav .menu li {
+  .Nav .menu > li {
     border: 1px solid rgb(150, 150, 150);
     border-radius: 5px;
     display: flex;
     align-items: center;
     margin: 0 20px;
+    height: 50px;
     padding: 10px 20px;
     cursor: pointer;
   }
 
-  .Nav .menu .profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    border-radius: 100%;
-    width: 50px;
-  }
+  // .Nav .menu .profileItem {
+  //   border: 1px solid red;
+  //   border-radius: 100%;
+  //   width: 50px;
+  //   height: 50px;
+  // }
 
   .Nav .menu li:last-child {
     margin-right: 20px;

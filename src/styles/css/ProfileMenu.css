@@ -1,0 +1,95 @@
+.ProfileMenu {
+  position: relative;
+  margin: 0 20px;
+}
+
+.ProfileMenu .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.ProfileMenu .profileMenu {
+  border: 1px solid #c5c5c5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  margin-top: 5px;
+}
+
+.ProfileMenu .profileMenu.hidden {
+  display: none;
+}
+
+.ProfileMenu .profileMenu > .header {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: flex;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+}
+
+.ProfileMenu .profileMenu > .header > .icon {
+  display: flex;
+  color: #bebebe;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #bebebe;
+  margin-right: 5px;
+}
+
+.ProfileMenu .profileMenu > .header > .user {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.ProfileMenu .profileMenu > .header > .close {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.ProfileMenu .profileMenu > .header > .close > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.ProfileMenu .profileMenu > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.ProfileMenu .profileMenu > ul > li {
+  padding: 15px;
+}
+
+.ProfileMenu.hidden {
+  display: none;
+}
