@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 
 class Nav extends Component {
-  state = { profileMenu: { hidden: false, closed: true } };
+  state = { profileMenu: { closed: true } };
 
   navSelect = (e) => {
     this.props.history.push(e.target.innerHTML);
@@ -29,7 +29,7 @@ class Nav extends Component {
             <li onClick={this.navSelect}>CV</li>
           </ul>
           <ProfileMenu
-            hidden={this.state.profileMenu.hidden}
+            // hidden={this.state.profileMenu.hidden}
             closed={this.state.profileMenu.closed}
             toggleProfileMenu={this.toggleProfileMenu}
           />

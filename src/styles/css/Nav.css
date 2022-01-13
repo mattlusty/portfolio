@@ -20,6 +20,7 @@
 
 .Nav > .rightSide {
   display: flex;
+  justify-self: flex-end;
 }
 
 .Nav .menu {

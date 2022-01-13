@@ -24,7 +24,7 @@
   margin-top: 5px;
 }
 
-.ProfileMenu .profileMenu.hidden {
+.ProfileMenu .profileMenu.closed {
   display: none;
 }
 
@@ -90,6 +90,12 @@
   padding: 15px;
 }
 
-.ProfileMenu.hidden {
+.ProfileMenu {
   display: none;
+}
+
+@media only screen and (min-width: 890px) {
+  .ProfileMenu {
+    display: block;
+  }
 }
