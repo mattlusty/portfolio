@@ -1,6 +1,6 @@
 .Portfolio .item {
   border: 1px solid #c5c5c5;
-  margin: 30px 100px;
+  margin: 30px 30px;
   padding: 20px;
   border-radius: 15px;
   background-color: #f8f8f8;
@@ -14,4 +14,16 @@
 
 .Portfolio .content {
   line-height: 2rem;
+}
+
+@media only screen and (min-width: 890px) {
+  .Portfolio .item {
+    margin: 30px 100px;
+  }
+  .Portfolio .header {
+    font-size: 2rem;
+  }
+  .Portfolio .content {
+    line-height: 2rem;
+  }
 }
