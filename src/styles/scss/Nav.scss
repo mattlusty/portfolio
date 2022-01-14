@@ -1,5 +1,10 @@
 // using .Nav .title ... height = 50px
 
+// .Nav > .title
+// .Nav > .rightSide > ul.menu > li.active
+// .Nav > .ProfileMenu >
+// .Nav > .mobileMenuToggle > i.icon-times
+
 .Nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,6 +79,13 @@
     height: 50px;
     padding: 10px 20px;
     cursor: pointer;
+  }
+
+  .Nav .menu > .active {
+    border: 1px solid #a0a0a0;
+    background-color: rgb(138, 183, 196);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.277);
+    color: white;
   }
 
   // .Nav .menu .profileItem {

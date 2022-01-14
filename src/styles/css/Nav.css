@@ -68,6 +68,12 @@
     padding: 10px 20px;
     cursor: pointer;
   }
+  .Nav .menu > .active {
+    border: 1px solid #a0a0a0;
+    background-color: #8ab7c4;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.277);
+    color: white;
+  }
   .Nav .menu li:last-child {
     margin-right: 20px;
   }

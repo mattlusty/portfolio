@@ -6,10 +6,11 @@ import { withRouter } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 
 class Nav extends Component {
-  state = { profileMenu: { closed: true } };
+  state = { profileMenu: { closed: true }, active: 0 };
 
   navSelect = (e) => {
     this.props.history.push(e.target.innerHTML);
+    this.setState({ active: e.target.id });
   };
 
   toggleProfileMenu = () => {
@@ -23,10 +24,18 @@ class Nav extends Component {
         <div className="title">Matthew Lusty</div>
         <div className="rightSide">
           <ul className="menu">
-            <li onClick={this.navSelect}>About</li>
-            <li onClick={this.navSelect}>Portfolio</li>
-            <li onClick={this.navSelect}>Contact</li>
-            <li onClick={this.navSelect}>CV</li>
+            <li id="0" className={this.state.active == 0 ? "active" : ""} onClick={this.navSelect}>
+              About
+            </li>
+            <li id="1" className={this.state.active == 1 ? "active" : ""} onClick={this.navSelect}>
+              Portfolio
+            </li>
+            <li id="2" className={this.state.active == 2 ? "active" : ""} onClick={this.navSelect}>
+              Contact
+            </li>
+            <li id="3" className={this.state.active == 3 ? "active" : ""} onClick={this.navSelect}>
+              CV
+            </li>
           </ul>
           <ProfileMenu
             // hidden={this.state.profileMenu.hidden}
