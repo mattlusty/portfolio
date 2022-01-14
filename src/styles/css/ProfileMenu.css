@@ -23,6 +23,7 @@
   position: absolute;
   right: 0px;
   margin-top: 8px;
+  min-width: 180px;
 }
 
 .ProfileMenu .profileMenu.closed {
@@ -38,6 +39,7 @@
   flex-direction: flex;
   padding: 5px 10px;
   margin: 10px 0 0 0;
+  white-space: nowrap;
 }
 
 .ProfileMenu .profileMenu > .header > .icon {
@@ -89,6 +91,12 @@
 
 .ProfileMenu .profileMenu > ul > li {
   padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ProfileMenu .profileMenu > ul > li:hover {
+  background-color: #ececec;
 }
 
 .ProfileMenu {

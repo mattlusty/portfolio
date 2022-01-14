@@ -1,22 +1,6 @@
-// .ProfileMenu {
-//   border: 1px solid rgb(197, 197, 197);
-//   // height: 600px;
-//   margin: 30px 100px;
-//   padding: 20px;
-//   border-radius: 15px;
-//   background-color: #f8f8f8;
-//   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
-// }
-
-// .ProfileMenu .header {
-//   // font-family: "sam";
-//   font-size: 2rem;
-//   padding: 10px 0;
-// }
-
-// .ProfileMenu .content {
-//   line-height: 2rem;
-// }
+// .ProfileMenu > .item
+// .ProfileMenu > .profileMenu > .header > .icon / .user
+// .ProfileMenu > .profileMenu > ul.item > li > div
 
 .ProfileMenu {
   position: relative;
@@ -55,6 +39,7 @@
   // width: 250px;
   // padding: 10px;
   margin-top: 8px;
+  min-width: 180px;
 }
 
 .ProfileMenu .profileMenu.closed {
@@ -70,6 +55,7 @@
   flex-direction: flex;
   padding: 5px 10px;
   margin: 10px 0 0 0;
+  white-space: nowrap;
 }
 
 .ProfileMenu .profileMenu > .header > .icon {
@@ -126,6 +112,12 @@
 .ProfileMenu .profileMenu > ul > li {
   // border: 1px solid black;
   padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ProfileMenu .profileMenu > ul > li:hover {
+  background-color: rgb(236, 236, 236);
 }
 
 // .ProfileMenu .profileMenu > ul > li.logout {
