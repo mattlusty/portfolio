@@ -18,7 +18,7 @@
   border: 1px solid rgb(168, 168, 168);
   border-radius: 10px;
   width: 500px;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
 }
 
 .Login > .login > .header {
@@ -27,7 +27,7 @@
   align-items: center;
   // border: 1px solid red;
   background-color: rgb(240, 244, 245);
-  margin: 20px 0;
+  margin: 20px 0 0;
   padding: 20px;
   width: 100%;
 }
@@ -63,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   // border: 1px solid red;
-  margin: 0px 20px 20px 20px;
+  margin: 50px 0px 50px 0px;
   width: fit-content;
 }
 .Login > .login > form > .username {
@@ -74,12 +74,12 @@
 
 .Login > .login > form > .username > label {
   display: block;
-  padding: 20px 20px 5px 0px;
+  padding: 0px 20px 5px 0px;
 }
 
 .Login > .login > form > .password > label {
   display: block;
-  padding: 20px 20px 5px 0px;
+  padding: 0px 20px 5px 0px;
 }
 
 .Login > .login > form > .username > input {
@@ -88,6 +88,7 @@
   padding: 5px;
   border-radius: 10px;
   width: 200px;
+  margin-bottom: 10px;
 }
 
 .Login > .login > form > .password > input {
@@ -96,4 +97,5 @@
   padding: 5px;
   border-radius: 10px;
   width: 200px;
+  // margin-bottom: 10px;
 }
