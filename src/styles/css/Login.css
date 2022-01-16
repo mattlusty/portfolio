@@ -1,0 +1,93 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid blue;
+  border-radius: 5px;
+  height: 100vh;
+}
+
+.Login > .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #a8a8a8;
+  border-radius: 10px;
+  width: 500px;
+  padding-bottom: 10px;
+}
+
+.Login > .login > .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f5;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.Login > .login > .header > .matt {
+  display: flex;
+  align-items: center;
+  font-family: "sam";
+  font-size: 2rem;
+  color: #374244;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+  background-color: #bed9e2;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Login > .login > .header > .lusty {
+  font-family: "sam";
+  font-size: 2rem;
+  color: #374244;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Login > .login > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+  width: fit-content;
+}
+
+.Login > .login > form > .username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Login > .login > form > .username > label {
+  display: block;
+  padding: 20px 20px 5px 0px;
+}
+
+.Login > .login > form > .password > label {
+  display: block;
+  padding: 20px 20px 5px 0px;
+}
+
+.Login > .login > form > .username > input {
+  display: block;
+  border: 1px solid #a8a8a8;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.Login > .login > form > .password > input {
+  border: 1px solid #a8a8a8;
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+}
