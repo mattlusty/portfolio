@@ -1,10 +1,17 @@
+import { withRouter } from "react-router-dom";
 //style
 import "../styles/css/Portfolio.css";
 
 function Portfolio(props) {
+  var navigate = (site) => {
+    console.log(site);
+    window.location.href = site;
+    // props.history.push(site);
+  };
+
   return (
     <div className="Portfolio">
-      <div className="item">
+      <div className="item moneyMoon" onClick={() => navigate("https://moneymoon.netlify.app/")}>
         <div className="header">Money Moon</div>
         <div className="content">
           Money Moon manages your clients' finances intelligently in one place. Record investments, assets, savings and
@@ -13,7 +20,7 @@ function Portfolio(props) {
           Make your clients money reach the moon today!
         </div>
       </div>
-      <div className="item">
+      <div className="item iMind" onClick={() => navigate("iMind")}>
         <div className="header">iMind Ventures</div>
         <div className="content">
           iMind is a web of positive ideas and connections for building successful and positive change. A platform to
@@ -22,7 +29,7 @@ function Portfolio(props) {
           iMind brings ideas and skills together. Solving tomorrow's problems together, today.
         </div>
       </div>
-      <div className="item">
+      <div className="item stellaNotes" onClick={() => navigate("stellaNotes")}>
         <div className="header">Stella Notes</div>
         <div className="content">
           No longer are your vast collections of detailed notes spread across miles of note-space. Stella notes
@@ -32,7 +39,7 @@ function Portfolio(props) {
           All your notes at your fingers tips at lightening speed.
         </div>
       </div>
-      <div className="item">
+      <div className="item wishListy" onClick={() => navigate("wishListy")}>
         <div className="header">Wish Listy</div>
         <div className="content">
           Family and friends who wish together stay together. Make lists of the gifts you would love to receive and when
@@ -47,4 +54,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio;
+export default withRouter(Portfolio);
