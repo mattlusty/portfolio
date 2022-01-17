@@ -5,6 +5,10 @@ import { useState } from "react";
 import "../styles/css/ProfileMenu.css";
 
 function ProfileMenu(props) {
+  var logout = () => {
+    props.history.push("login");
+  };
+
   return (
     <div className={"ProfileMenu"}>
       <div className="item" onClick={props.toggleProfileMenu}>
@@ -24,7 +28,7 @@ function ProfileMenu(props) {
               <li name="leaf" label="Settings">
                 <div>Settings</div>
               </li>
-              <li className="logout" name="logout" label="logout">
+              <li className="logout" onClick={logout} name="logout" label="logout">
                 <div>Log out</div>
               </li>
             </ul>

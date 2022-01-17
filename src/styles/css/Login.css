@@ -68,16 +68,20 @@
 .Login > .login > form > .username > label {
   display: block;
   padding: 0px 20px 5px 0px;
+  font-size: 0.9rem;
+  margin-left: 8px;
 }
 
 .Login > .login > form > .password > label {
   display: block;
   padding: 0px 20px 5px 0px;
+  font-size: 0.9rem;
+  margin-left: 8px;
 }
 
 .Login > .login > form > .username > input {
   display: block;
-  border: 1px solid #a8a8a8;
+  border: 1px solid #b8b8b8;
   padding: 8px;
   border-radius: 10px;
   width: 100%;
@@ -85,7 +89,7 @@
 }
 
 .Login > .login > form > .password > input {
-  border: 1px solid #a8a8a8;
+  border: 1px solid #b8b8b8;
   display: block;
   padding: 8px;
   border-radius: 10px;
@@ -95,9 +99,15 @@
 
 .Login > .login > form > button {
   width: 100px;
-  border: 1px solid #888888;
+  border: 1px solid #aaaaaa;
   border-radius: 8px;
   padding: 10px;
   background-color: rgba(190, 217, 226, 0.37);
   width: 100%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+}
+
+.Login > .login > form > button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
 }

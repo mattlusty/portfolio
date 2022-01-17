@@ -1,6 +1,11 @@
+import { withRouter } from "react-router-dom";
 import "../styles/css/Login.css";
 
-function Login() {
+function Login(props) {
+  var login = () => {
+    props.history.push("about");
+  };
+
   return (
     <div className="Login">
       <div className="login">
@@ -17,11 +22,11 @@ function Login() {
             <label htmlFor="password">Password</label>
             <input id="password"></input>
           </div>
-          <button>Login</button>
+          <button onClick={login}>Login</button>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default withRouter(Login);
