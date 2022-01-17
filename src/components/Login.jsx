@@ -1,4 +1,5 @@
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
+
 import "../styles/css/Login.css";
 
 function Login(props) {
@@ -12,6 +13,9 @@ function Login(props) {
         <div className="header">
           <div className="matt">Matthew</div>
           <div className="lusty">Lusty</div>
+        </div>
+        <div className="register">
+          Need an account? <Link to="/register">Register</Link>
         </div>
         <form className="loginForm">
           <div className="username">

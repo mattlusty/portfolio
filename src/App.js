@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import CV from "./components/CV";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   let [hidden, setHidden] = useState(false);
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
         <Route path="/">
           <Nav toggleSideMenu={toggleSideMenu} />
           <SideMenu toggleSideMenu={toggleSideMenu} hidden={hidden} />

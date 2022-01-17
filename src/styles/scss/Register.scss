@@ -1,8 +1,8 @@
-// .Login > .login > .header
+// .Register > .login > .header
 // .Login > .login > form > .username > label-for-username / input-id-username
 // .Login > .login > form > .password > label-for-password / input-id-password
 
-.Login {
+.Register {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   height: 100vh;
 }
 
-.Login > .login {
+.Register > .register {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
   // padding-bottom: 10px;
 }
 
-.Login > .login > .header {
+.Register > .register > .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,30 +33,30 @@
   width: 100%;
 }
 
-.Login > .login > .register {
+.Register > .register > .login {
   // border: 1px solid black;
   margin: 30px;
 }
 
-.Login > .login > .register > a {
+.Register > .register > .login > a {
   color: rgb(45, 150, 185);
 }
 
-.Login > .login > .header > .matt {
+.Register > .register > .header {
   display: flex;
   align-items: center;
   font-family: "sam";
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: rgb(55, 66, 68);
-  border: 1px solid rgba(0, 0, 0, 0.253);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
-  background-color: rgb(190, 217, 226);
-  border-radius: 25px;
-  height: 50px;
-  padding: 10px;
+  // border: 1px solid rgba(0, 0, 0, 0.253);
+  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+  // background-color: rgb(190, 217, 226);
+  // border-radius: 25px;
+  height: 90px;
+  // padding: 40px;
 }
 
-.Login > .login > .header > .lusty {
+.Register > .register > .header > .lusty {
   font-family: "sam";
   font-size: 2rem;
   color: rgb(55, 66, 68);
@@ -68,7 +68,7 @@
   padding: 10px;
 }
 
-.Login > .login > form {
+.Register > .register > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,27 +76,27 @@
   margin: 0px 0px 50px 0px;
   width: 300px;
 }
-.Login > .login > form > .username {
+.Register > .register > form > .username {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Login > .login > form > .username > label {
+.Register > .register > form > .username > label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.9rem;
   margin-left: 8px;
 }
 
-.Login > .login > form > .password > label {
+.Register > .register > form > .password > label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.9rem;
   margin-left: 8px;
 }
 
-.Login > .login > form > .username > input {
+.Register > .register > form > .username > input {
   display: block;
   border: 1px solid rgb(184, 184, 184);
   padding: 8px;
@@ -105,7 +105,7 @@
   margin-bottom: 10px;
 }
 
-.Login > .login > form > .password > input {
+.Register > .register > form > .password > input {
   border: 1px solid rgb(184, 184, 184);
   display: block;
   padding: 8px;
@@ -114,7 +114,7 @@
   margin-bottom: 30px;
 }
 
-.Login > .login > form > button {
+.Register > .register > form > button {
   width: 100px;
   border: 1px solid rgb(170, 170, 170);
   border-radius: 8px;
@@ -125,6 +125,6 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
 }
 
-.Login > .login > form > button:hover {
+.Register > .register > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
 }

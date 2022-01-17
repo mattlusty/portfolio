@@ -1,4 +1,4 @@
-.Login {
+.Register {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.Login > .login {
+.Register > .register {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
 }
 
-.Login > .login > .header {
+.Register > .register > .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,29 +26,24 @@
   width: 100%;
 }
 
-.Login > .login > .register {
+.Register > .register > .login {
   margin: 30px;
 }
 
-.Login > .login > .register > a {
+.Register > .register > .login > a {
   color: #2d96b9;
 }
 
-.Login > .login > .header > .matt {
+.Register > .register > .header {
   display: flex;
   align-items: center;
   font-family: "sam";
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #374244;
-  border: 1px solid rgba(0, 0, 0, 0.253);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
-  background-color: #bed9e2;
-  border-radius: 25px;
-  height: 50px;
-  padding: 10px;
+  height: 90px;
 }
 
-.Login > .login > .header > .lusty {
+.Register > .register > .header > .lusty {
   font-family: "sam";
   font-size: 2rem;
   color: #374244;
@@ -59,7 +54,7 @@
   padding: 10px;
 }
 
-.Login > .login > form {
+.Register > .register > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,27 +62,27 @@
   width: 300px;
 }
 
-.Login > .login > form > .username {
+.Register > .register > form > .username {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Login > .login > form > .username > label {
+.Register > .register > form > .username > label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.9rem;
   margin-left: 8px;
 }
 
-.Login > .login > form > .password > label {
+.Register > .register > form > .password > label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.9rem;
   margin-left: 8px;
 }
 
-.Login > .login > form > .username > input {
+.Register > .register > form > .username > input {
   display: block;
   border: 1px solid #b8b8b8;
   padding: 8px;
@@ -96,7 +91,7 @@
   margin-bottom: 10px;
 }
 
-.Login > .login > form > .password > input {
+.Register > .register > form > .password > input {
   border: 1px solid #b8b8b8;
   display: block;
   padding: 8px;
@@ -105,7 +100,7 @@
   margin-bottom: 30px;
 }
 
-.Login > .login > form > button {
+.Register > .register > form > button {
   width: 100px;
   border: 1px solid #aaaaaa;
   border-radius: 8px;
@@ -116,6 +111,6 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
 }
 
-.Login > .login > form > button:hover {
+.Register > .register > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
 }
