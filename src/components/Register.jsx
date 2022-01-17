@@ -9,6 +9,10 @@ function Register(props) {
 
   return (
     <div className="Register">
+      <div className="brand">
+        <div className="matt">Matthew</div>
+        <div className="lusty">Lusty</div>
+      </div>
       <div className="register">
         <div className="header">Create an Account</div>
         <div className="login">

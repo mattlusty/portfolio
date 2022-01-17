@@ -9,11 +9,12 @@ function Login(props) {
 
   return (
     <div className="Login">
+      <div className="brand">
+        <div className="matt">Matthew</div>
+        <div className="lusty">Lusty</div>
+      </div>
       <div className="login">
-        <div className="header">
-          <div className="matt">Matthew</div>
-          <div className="lusty">Lusty</div>
-        </div>
+        <div className="header">Sign In</div>
         <div className="register">
           Need an account? <Link to="/register">Register</Link>
         </div>

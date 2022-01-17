@@ -3,46 +3,33 @@
 // .Login > .login > form > .password > label-for-password / input-id-password
 
 .Login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  // flex-direction: column;
+  // align-items: center;
   // border: 5px solid blue;
   border-radius: 5px;
-  height: 100vh;
+  // height: 100vh;
+  margin: 0 auto 30px auto;
+  width: fit-content;
 }
 
-.Login > .login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid rgb(168, 168, 168);
-  border-radius: 20px;
-  width: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
-  // padding-bottom: 10px;
-}
-
-.Login > .login > .header {
+.Login .brand {
+  // position: absolute;
+  // top: 0px;
+  // left: 0px;
+  // align-self: flex-start;
   display: flex;
   justify-content: center;
   align-items: center;
   // border: 1px solid red;
-  background-color: rgb(240, 244, 245);
-  margin: 30px 0 0;
-  padding: 20px;
-  width: 100%;
+  // background-color: rgb(240, 244, 245);
+  // margin: 30px 0 0;
+  padding: 20px 20px 20px 0;
+  width: fit-content;
 }
 
-.Login > .login > .register {
-  font-size: 0.9rem;
-  margin: 30px;
-}
-
-.Login > .login > .register > a {
-  color: rgb(45, 150, 185);
-}
-
-.Login > .login > .header > .matt {
+.Login .brand > .matt {
   display: flex;
   align-items: center;
   font-family: "sam";
@@ -56,7 +43,7 @@
   padding: 10px;
 }
 
-.Login > .login > .header > .lusty {
+.Login .brand > .lusty {
   font-family: "sam";
   font-size: 2rem;
   color: rgb(55, 66, 68);
@@ -68,12 +55,49 @@
   padding: 10px;
 }
 
+.Login > .login {
+  // position: relative;
+  // align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 20px;
+  width: 380px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  // padding-bottom: 10px;
+}
+
+.Login .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;
+  background-color: rgb(240, 244, 245);
+  margin: 30px 0 0;
+  padding: 20px;
+  width: 100%;
+  height: 90px;
+  font-family: "sam";
+  font-size: 2.5rem;
+}
+
+.Login > .login > .register {
+  font-size: 0.9rem;
+  margin: 30px;
+}
+
+.Login > .login > .register > a {
+  color: rgb(45, 150, 185);
+}
+
 .Login > .login > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   // border: 1px solid red;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 40px 0px;
   width: 300px;
 }
 .Login > .login > form > .username {
@@ -113,4 +137,39 @@
 
 .Login > .login > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
+}
+
+@media (min-width: 900px) {
+  .Login {
+    // justify-content: center;
+    grid-template-rows: 1fr;
+    margin: 30px;
+    width: unset;
+    justify-content: center;
+  }
+
+  .Login .brand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+}
+
+@media (min-height: 600px) {
+  .Login {
+    height: 100vh;
+  }
+  .Login .brand {
+    // height: 70px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .Login {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+  }
 }

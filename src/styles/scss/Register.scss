@@ -4,11 +4,49 @@
 
 .Register {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
   align-items: center;
   // border: 5px solid blue;
   border-radius: 5px;
-  height: 100vh;
+  // height: 100vh;
+  margin: 0 auto 30px auto;
+  width: fit-content;
+}
+
+.Register .brand {
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 0;
+  width: fit-content;
+}
+
+.Register .brand > .matt {
+  display: flex;
+  align-items: center;
+  font-family: "sam";
+  font-size: 2rem;
+  color: rgb(55, 66, 68);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+  background-color: rgb(190, 217, 226);
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Register .brand > .lusty {
+  font-family: "sam";
+  font-size: 2rem;
+  color: rgb(55, 66, 68);
+  display: flex;
+  align-items: center;
+  // border: 1px solid blue;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
 }
 
 .Register > .register {
@@ -17,9 +55,10 @@
   align-items: center;
   border: 1px solid rgb(168, 168, 168);
   border-radius: 20px;
-  width: 500px;
+  width: 380px;
+  height: fit-content;
+  // height: 900px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
-  // padding-bottom: 10px;
 }
 
 .Register > .register > .header {
@@ -74,7 +113,7 @@
   flex-direction: column;
   justify-content: center;
   // border: 1px solid red;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 40px 0px;
   width: fit-content;
 }
 
@@ -112,7 +151,6 @@
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.7rem;
-  font-weight: bold;
   margin-left: 8px;
 }
 
@@ -148,4 +186,27 @@
 
 .Register > .register > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
+}
+
+@media (min-width: 900px) {
+  .Register {
+    // justify-content: center;
+    margin: 30px;
+    width: unset;
+  }
+
+  .Register .brand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .Register {
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+  }
 }
