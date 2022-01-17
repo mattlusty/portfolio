@@ -26,14 +26,6 @@
   width: 100%;
 }
 
-.Register > .register > .login {
-  margin: 30px;
-}
-
-.Register > .register > .login > a {
-  color: #2d96b9;
-}
-
 .Register > .register > .header {
   display: flex;
   align-items: center;
@@ -54,12 +46,43 @@
   padding: 10px;
 }
 
+.Register > .register > .login {
+  margin: 30px;
+  font-size: 0.9rem;
+}
+
+.Register > .register > .login > a {
+  color: #2d96b9;
+}
+
 .Register > .register > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px 0px 50px 0px;
-  width: 300px;
+  width: fit-content;
+}
+
+.Register > .register > form > .names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.Register > .register > form > .names > .field {
+  width: 150px;
+}
+
+.Register > .register > form > .names > .field > input {
+  width: 100%;
+  border: 1px solid #b8b8b8;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.Register > .register > form > .email {
+  display: flex;
+  flex-direction: column;
 }
 
 .Register > .register > form > .username {
@@ -68,36 +91,21 @@
   justify-content: center;
 }
 
-.Register > .register > form > .username > label {
+.Register > .register > form label {
   display: block;
   padding: 0px 20px 5px 0px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  font-weight: bold;
   margin-left: 8px;
 }
 
-.Register > .register > form > .password > label {
-  display: block;
-  padding: 0px 20px 5px 0px;
-  font-size: 0.9rem;
-  margin-left: 8px;
-}
-
-.Register > .register > form > .username > input {
+.Register > .register > form input {
   display: block;
   border: 1px solid #b8b8b8;
   padding: 8px;
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 10px;
-}
-
-.Register > .register > form > .password > input {
-  border: 1px solid #b8b8b8;
-  display: block;
-  padding: 8px;
-  border-radius: 10px;
-  width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .Register > .register > form > button {
@@ -109,6 +117,7 @@
   width: 100%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  margin-top: 20px;
 }
 
 .Register > .register > form > button:hover {

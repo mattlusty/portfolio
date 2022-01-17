@@ -14,16 +14,30 @@ function Register(props) {
         <div className="login">
           Already signed up? <Link to="/login">Login</Link>
         </div>
-        <form className="RegisterForm">
-          <div className="username">
+        <form>
+          <div className="names">
+            <div className="field firstName">
+              <label htmlFor="firstName">First Name</label>
+              <input id="firstName"></input>
+            </div>
+            <div className="field lastName">
+              <label htmlFor="lastName">Last Name</label>
+              <input id="lastName"></input>
+            </div>
+          </div>
+          <div className="field email">
+            <label htmlFor="username">Email</label>
+            <input id="username"></input>
+          </div>
+          <div className="field username">
             <label htmlFor="username">Username</label>
             <input id="username"></input>
           </div>
-          <div className="password">
+          <div className="field password">
             <label htmlFor="password">Password</label>
             <input id="password"></input>
           </div>
-          <button onClick={submit}>Register</button>
+          <button onClick={submit}>Sign Up</button>
         </form>
       </div>
     </div>
