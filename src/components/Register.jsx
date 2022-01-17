@@ -35,7 +35,7 @@ function Register(props) {
           </div>
           <div className="field password">
             <label htmlFor="password">Password</label>
-            <input id="password"></input>
+            <input type="password" id="password"></input>
           </div>
           <button onClick={submit}>Sign Up</button>
         </form>

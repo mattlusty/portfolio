@@ -34,7 +34,7 @@
 }
 
 .Login > .login > .register {
-  // border: 1px solid black;
+  font-size: 0.9rem;
   margin: 30px;
 }
 
@@ -82,36 +82,20 @@
   justify-content: center;
 }
 
-.Login > .login > form > .username > label {
+.Login > .login > form label {
   display: block;
   padding: 0px 20px 5px 0px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin-left: 8px;
 }
 
-.Login > .login > form > .password > label {
-  display: block;
-  padding: 0px 20px 5px 0px;
-  font-size: 0.9rem;
-  margin-left: 8px;
-}
-
-.Login > .login > form > .username > input {
+.Login > .login > form input {
   display: block;
   border: 1px solid rgb(184, 184, 184);
   padding: 8px;
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 10px;
-}
-
-.Login > .login > form > .password > input {
-  border: 1px solid rgb(184, 184, 184);
-  display: block;
-  padding: 8px;
-  border-radius: 10px;
-  width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .Login > .login > form > button {
@@ -123,6 +107,8 @@
   width: 100%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  margin-top: 20px;
+  font-family: "proxima";
 }
 
 .Login > .login > form > button:hover {

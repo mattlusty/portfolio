@@ -17,14 +17,14 @@ function Login(props) {
         <div className="register">
           Need an account? <Link to="/register">Register</Link>
         </div>
-        <form className="loginForm">
-          <div className="username">
+        <form>
+          <div className="field username">
             <label htmlFor="username">Username</label>
             <input id="username"></input>
           </div>
-          <div className="password">
+          <div className="field password">
             <label htmlFor="password">Password</label>
-            <input id="password"></input>
+            <input type="password" id="password"></input>
           </div>
           <button onClick={login}>Login</button>
         </form>

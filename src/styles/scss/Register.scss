@@ -86,7 +86,6 @@
 }
 
 .Register > .register > form > .names > .field {
-  // border: 1px solid red;
   width: 150px;
 }
 
@@ -127,7 +126,6 @@
 }
 
 .Register > .register > form > button {
-  width: 100px;
   border: 1px solid rgb(170, 170, 170);
   border-radius: 8px;
   padding: 10px;
@@ -136,7 +134,17 @@
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
   margin-top: 20px;
+  font-family: "proxima";
 }
+
+// button {
+//   border: 1px solid rgb(170, 170, 170);
+//   border-radius: 8px;
+//   padding: 10px;
+//   cursor: pointer;
+//   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+//   font-family: "proxima";
+// }
 
 .Register > .register > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);

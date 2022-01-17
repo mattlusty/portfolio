@@ -109,7 +109,6 @@
 }
 
 .Register > .register > form > button {
-  width: 100px;
   border: 1px solid #aaaaaa;
   border-radius: 8px;
   padding: 10px;
@@ -118,6 +117,7 @@
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
   margin-top: 20px;
+  font-family: "proxima";
 }
 
 .Register > .register > form > button:hover {
