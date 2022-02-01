@@ -1,10 +1,19 @@
 import { withRouter, Link } from "react-router-dom";
+import { useState } from "react";
 
 import "../styles/css/Register.css";
 
 function Register(props) {
-  var submit = () => {
+  var [account, setAccount] = useState({ username: "", password: "", email: "", firstname: "", lastname: "" });
+
+  var submit = (e) => {
     props.history.push("about");
+  };
+
+  var handleChange = (e) => {
+    var _account = { ...account };
+    _account[e.currentTarget.name] = e.currentTarget.value;
+    setAccount(_account);
   };
 
   return (
@@ -18,7 +27,7 @@ function Register(props) {
         <div className="login">
           Already signed up? <Link to="/login">Login</Link>
         </div>
-        <form>
+        <form onSubmit={submit}>
           <div className="names">
             <div className="field firstName">
               <label htmlFor="firstName">First Name</label>
@@ -35,13 +44,13 @@ function Register(props) {
           </div>
           <div className="field username">
             <label htmlFor="username">Username</label>
-            <input id="username"></input>
+            <input name="username" onChange={handleChange} value={account.username} id="username"></input>
           </div>
           <div className="field password">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password"></input>
+            <input name="password" onChange={handleChange} value={account.password} id="password"></input>
           </div>
-          <button onClick={submit}>Sign Up</button>
+          <button>Sign Up</button>
         </form>
       </div>
     </div>
