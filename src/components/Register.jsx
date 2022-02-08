@@ -4,10 +4,16 @@ import { useState } from "react";
 import "../styles/css/Register.css";
 
 function Register(props) {
-  var [account, setAccount] = useState({ username: "", password: "", email: "", firstname: "", lastname: "" });
+  var [account, setAccount] = useState({ firstName: "", lastName: "", email: "", username: "", password: "" });
 
   var submit = (e) => {
-    props.history.push("about");
+    // props.history.push("about");
+    e.preventDefault();
+    const userString = JSON.stringify(account);
+    fetch("http://localhost:4000/portfolio/users", { method: "post", body: userString })
+      .then((res) => res.json())
+      .then((newRecord) => console.log(newRecord))
+      .catch((e) => console.log(e));
   };
 
   var handleChange = (e) => {
@@ -31,16 +37,16 @@ function Register(props) {
           <div className="names">
             <div className="field firstName">
               <label htmlFor="firstName">First Name</label>
-              <input id="firstName"></input>
+              <input name="firstName" onChange={handleChange} id="firstName"></input>
             </div>
             <div className="field lastName">
               <label htmlFor="lastName">Last Name</label>
-              <input id="lastName"></input>
+              <input name="lastName" onChange={handleChange} id="lastName"></input>
             </div>
           </div>
           <div className="field email">
-            <label htmlFor="username">Email</label>
-            <input id="username"></input>
+            <label htmlFor="email">Email</label>
+            <input name="email" onChange={handleChange} id="email"></input>
           </div>
           <div className="field username">
             <label htmlFor="username">Username</label>
