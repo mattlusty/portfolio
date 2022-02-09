@@ -10,10 +10,30 @@ function Register(props) {
     // props.history.push("about");
     e.preventDefault();
     const userString = JSON.stringify(account);
+    console.log("submit");
     fetch("http://localhost:4000/portfolio/users", { method: "post", body: userString })
-      .then((res) => res.json())
+      .then((res) => {
+        // No error - response returned from server - with good status
+        if (res.ok) {
+          return res.json();
+        } // Expected error - response returned from server - but with bad status
+        else {
+          return res
+            .json()
+            .then((data) => {
+              console.log("data", data);
+              throw new Error((data && data.message) || res.status);
+            })
+            .catch(() => {
+              console.log("could not parse json");
+              throw new Error(res.status);
+            });
+        }
+      })
       .then((newRecord) => console.log(newRecord))
-      .catch((e) => console.log(e));
+      // Unexpected error - no response returned from server (eg. network error)
+      .catch((e) => console.error("e", e));
+    console.log("done");
   };
 
   var handleChange = (e) => {
