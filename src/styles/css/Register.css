@@ -109,13 +109,6 @@
   width: 150px;
 }
 
-.Register > .register > form > .names > .field > input {
-  width: 100%;
-  border: 1px solid #b8b8b8;
-  padding: 8px;
-  border-radius: 10px;
-}
-
 .Register > .register > form > .email {
   display: flex;
   flex-direction: column;
@@ -138,9 +131,24 @@
   display: block;
   border: 1px solid #b8b8b8;
   padding: 8px;
+  font-size: 0.8rem;
   border-radius: 10px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.Register > .register > form input:focus {
+  /* box-shadow: 0 0 3px grey; */
+  box-shadow: rgb(231, 231, 231) 0px 0px 0px 3px;
+}
+
+.Register > .register > form .error input {
+  border-color: red;
+}
+
+.Register > .register > form .error span {
+  margin-left: 4px;
+  color: red;
 }
 
 .Register > .register > form > button {
