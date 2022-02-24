@@ -1,18 +1,20 @@
 import { withRouter, Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as http from "../services/httpService";
 
 import "../styles/css/Register.css";
 
 function Register(props) {
   var [account, setAccount] = useState({ firstName: "", lastName: "", email: "", username: "", password: "" });
+
   var [errors, setErrors] = useState({
-    firstName: "required",
+    firstName: "",
     lastName: "",
     email: "",
-    username: "must be between 4 to 8 characters",
-    password: "required",
+    username: "",
+    password: "",
   });
+
   var [fresh, setFresh] = useState({
     firstName: true,
     lastName: true,
@@ -20,6 +22,9 @@ function Register(props) {
     username: true,
     password: true,
   });
+
+  let _account;
+  let _fresh;
 
   var submit = (e) => {
     // props.history.push("about");
@@ -36,9 +41,32 @@ function Register(props) {
   };
 
   var handleChange = (e) => {
-    var _account = { ...account };
-    _account[e.currentTarget.name] = e.currentTarget.value;
+    let { name, value } = e.currentTarget;
+    _account = { ...account };
+    _fresh = { ...fresh };
+    _account[name] = value;
     setAccount(_account);
+    validate(name);
+  };
+
+  var handleBlur = (e) => {
+    let name = e.currentTarget.name;
+    _account = { ...account };
+    _fresh = { ...fresh };
+    _fresh[name] = false;
+    setFresh(_fresh);
+    validate(name);
+  };
+
+  const validate = (name) => {
+    let _errors = { ...errors };
+    _errors[name] = "";
+    if (_fresh[name] === false) {
+      if (!_account[name]) {
+        _errors[name] = "required";
+      }
+    }
+    setErrors(_errors);
   };
 
   return (
@@ -57,16 +85,16 @@ function Register(props) {
             <div className={`field firstName ${!fresh.firstName && errors.firstName ? "error" : ""}`}>
               <label htmlFor="firstName">
                 First Name
-                {!fresh.firstName && errors.firstName ? <span>{errors.firstName}</span> : ""}
+                {!fresh.firstName ? <span>{errors.firstName}</span> : ""}
               </label>
-              <input name="firstName" onChange={handleChange} id="firstName"></input>
+              <input name="firstName" onChange={handleChange} onBlur={handleBlur} id="firstName"></input>
             </div>
             <div className={`field lastName ${!fresh.lastName && errors.lastName ? "error" : ""}`}>
               <label htmlFor="lastName">
                 Last Name
-                {!fresh.lastName && errors.firstName ? <span>{errors.lastName}</span> : ""}
+                {!fresh.lastName && errors.lastName ? <span>{errors.lastName}</span> : ""}
               </label>
-              <input name="lastName" onChange={handleChange} id="lastName"></input>
+              <input name="lastName" onChange={handleChange} onBlur={handleBlur} id="lastName"></input>
             </div>
           </div>
           <div className={`field email ${!fresh.email && errors.email ? "error" : ""}`}>
@@ -74,21 +102,34 @@ function Register(props) {
               Email
               {!fresh.email && errors.email ? <span>{errors.email}</span> : ""}
             </label>
-            <input name="email" onChange={handleChange} id="email"></input>
+            <input name="email" onChange={handleChange} onBlur={handleBlur} id="email"></input>
           </div>
           <div className={`field username ${!fresh.username && errors.username ? "error" : ""}`}>
             <label htmlFor="username">
               Username
               {!fresh.username && errors.username ? <span>{errors.username}</span> : ""}
             </label>
-            <input name="username" onChange={handleChange} value={account.username} id="username"></input>
+            <input
+              name="username"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={account.username}
+              id="username"
+            ></input>
           </div>
           <div className={`field password ${!fresh.password && errors.password ? "error" : ""}`}>
             <label htmlFor="password">
               Password
               {!fresh.password && errors.password ? <span>{errors.password}</span> : ""}
             </label>
-            <input name="password" onChange={handleChange} value={account.password} id="password"></input>
+            <input
+              name="password"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={account.password}
+              type="password"
+              id="password"
+            ></input>
           </div>
           <button>Sign Up</button>
         </form>

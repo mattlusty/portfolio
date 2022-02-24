@@ -77,25 +77,8 @@
   align-items: center;
   font-family: "sam";
   font-size: 2.5rem;
-  color: rgb(55, 66, 68);
-  // border: 1px solid rgba(0, 0, 0, 0.253);
-  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
-  // background-color: rgb(190, 217, 226);
-  // border-radius: 25px;
+  color: rgb(68, 55, 55);
   height: 90px;
-  // padding: 40px;
-}
-
-.Register > .register > .header > .lusty {
-  font-family: "sam";
-  font-size: 2rem;
-  color: rgb(55, 66, 68);
-  display: flex;
-  align-items: center;
-  // border: 1px solid blue;
-  border-radius: 25px;
-  height: 50px;
-  padding: 10px;
 }
 
 .Register > .register > .login {
@@ -128,12 +111,14 @@
   width: 150px;
 }
 
-.Register > .register > form > .names > .field > input {
-  width: 100%;
-  border: 1px solid rgb(184, 184, 184);
-  padding: 8px;
-  border-radius: 10px;
-}
+// not needed
+
+// .Register > .register > form > .names > .field > input {
+//   width: 100%;
+//   border: 1px solid rgb(184, 184, 184);
+//   padding: 8px;
+//   border-radius: 10px;
+// }
 
 .Register > .register > form > .email {
   // border: 1px solid blue;
@@ -150,13 +135,12 @@
 .Register > .register > form label {
   display: block;
   padding: 0px 20px 5px 0px;
-  font-size: 0.7rem;npm 
+  font-size: 0.7rem;
   margin-left: 8px;
 }
 
 .Register > .register > form input {
   display: block;
-  border: 1px solid rgb(184, 184, 184);
   padding: 8px;
   border-radius: 10px;
   width: 100%;
@@ -168,21 +152,11 @@
   border-radius: 8px;
   padding: 10px;
   background-color: rgba(190, 217, 226, 0.37);
-  width: 100%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
   margin-top: 20px;
   font-family: "proxima";
 }
-
-// button {
-//   border: 1px solid rgb(170, 170, 170);
-//   border-radius: 8px;
-//   padding: 10px;
-//   cursor: pointer;
-//   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
-//   font-family: "proxima";
-// }
 
 .Register > .register > form > button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);

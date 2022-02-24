@@ -115,11 +115,14 @@
 
 .Login > .login > form input {
   display: block;
-  border: 1px solid rgb(184, 184, 184);
   padding: 8px;
   border-radius: 10px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+form input {
+  border: 1px solid rgb(184, 184, 184);
 }
 
 .Login > .login > form > button {

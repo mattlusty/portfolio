@@ -58,6 +58,20 @@ input {
   outline: none;
 }
 
+form input:focus {
+  /* box-shadow: 0 0 3px grey; */
+  box-shadow: #e7e7e7 0px 0px 0px 3px;
+}
+
+form .error input {
+  border-color: red;
+}
+
+form .error span {
+  margin-left: 4px;
+  color: red;
+}
+
 /*8888b  .d88b.  d8b   db d888888b .d8888. 
 88'     .8P  Y8. 888o  88 `~~88~~' 88'  YP 
 88ooo   88    88 88V8o 88    88    `8bo.   

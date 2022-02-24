@@ -67,19 +67,8 @@
   align-items: center;
   font-family: "sam";
   font-size: 2.5rem;
-  color: #374244;
+  color: #443737;
   height: 90px;
-}
-
-.Register > .register > .header > .lusty {
-  font-family: "sam";
-  font-size: 2rem;
-  color: #374244;
-  display: flex;
-  align-items: center;
-  border-radius: 25px;
-  height: 50px;
-  padding: 10px;
 }
 
 .Register > .register > .login {
@@ -129,26 +118,10 @@
 
 .Register > .register > form input {
   display: block;
-  border: 1px solid #b8b8b8;
   padding: 8px;
-  font-size: 0.8rem;
   border-radius: 10px;
   width: 100%;
   margin-bottom: 15px;
-}
-
-.Register > .register > form input:focus {
-  /* box-shadow: 0 0 3px grey; */
-  box-shadow: rgb(231, 231, 231) 0px 0px 0px 3px;
-}
-
-.Register > .register > form .error input {
-  border-color: red;
-}
-
-.Register > .register > form .error span {
-  margin-left: 4px;
-  color: red;
 }
 
 .Register > .register > form > button {
@@ -156,7 +129,6 @@
   border-radius: 8px;
   padding: 10px;
   background-color: rgba(190, 217, 226, 0.37);
-  width: 100%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
   margin-top: 20px;

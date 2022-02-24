@@ -6,6 +6,12 @@ import "../styles/css/Login.css";
 
 function Login(props) {
   var [creds, setCreds] = useState({ username: "", password: "" });
+  var [fresh, setFresh] = useState({ username: true, password: true });
+  var [errors, setErrors] = useState({ username: "", password: "" });
+
+  // local state - to keep track of prevState (between setStates)
+  let _creds;
+  let _fresh;
 
   var login = async (e) => {
     e.preventDefault();
@@ -15,17 +21,47 @@ function Login(props) {
       .post(endPoint, { username, password })
       .then((res) => {
         window.localStorage.setItem("accessToken", res.data.token);
-        console.log(res.data.token);
+        props.history.push("about)");
       })
       .catch((error) => {
-        console.log(error);
+        if (error.response.status === 401) {
+          let _errors = { ...errors };
+          _errors.username = "incorrect details, please try again";
+          _errors.password = "incorrect details, please try again";
+          setErrors(_errors);
+        } else {
+          console.log(error);
+        }
       });
   };
 
   var handleChange = (e) => {
-    var _creds = { ...creds };
-    _creds[e.currentTarget.name] = e.currentTarget.value;
+    let { name, value } = e.currentTarget;
+    _creds = { ...creds };
+    _fresh = { ...fresh };
+    _creds[name] = value;
     setCreds(_creds);
+    validate(name);
+  };
+
+  var handleBlur = (e) => {
+    let name = e.currentTarget.name;
+    _creds = { ...creds };
+    _fresh = { ...fresh };
+    _fresh[name] = false;
+    setFresh(_fresh);
+    validate(name);
+  };
+
+  const validate = (name) => {
+    let _errors = { ...errors };
+    _errors[name] = "";
+    if (!_fresh[name]) {
+      if (!_creds[name]) {
+        _errors[name] = "required";
+      }
+    }
+    setErrors(_errors);
   };
 
   return (
@@ -40,13 +76,30 @@ function Login(props) {
           Need an account? <Link to="/register">Register</Link>
         </div>
         <form onSubmit={login}>
-          <div className="field username">
-            <label htmlFor="username">Username</label>
-            <input onChange={handleChange} id="username" name="username" value={creds.username}></input>
+          <div className={`field username ${errors.username ? "error" : ""}`}>
+            <label htmlFor="username">
+              Username<span>{errors.username}</span>
+            </label>
+            <input
+              onChange={handleChange}
+              onBlur={handleBlur}
+              id="username"
+              name="username"
+              value={creds.username}
+            ></input>
           </div>
-          <div className="field password">
-            <label htmlFor="password">Password</label>
-            <input onChange={handleChange} type="password" id="password" name="password" value={creds.password}></input>
+          <div className={`field password ${errors.password ? "error" : ""}`}>
+            <label htmlFor="password">
+              Password <span>{errors.password}</span>
+            </label>
+            <input
+              onChange={handleChange}
+              onBlur={handleBlur}
+              type="password"
+              id="password"
+              name="password"
+              value={creds.password}
+            ></input>
           </div>
           <button>Login</button>
         </form>
