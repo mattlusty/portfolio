@@ -26,13 +26,14 @@ function Register(props) {
   let _account;
   let _fresh;
 
-  var submit = (e) => {
-    // props.history.push("about");
+  var register = (e) => {
     e.preventDefault();
     http
       .post("http://localhost:4000/portfolio/users", account)
       .then((res) => {
-        console.log("OK: ", res);
+        localStorage.setItem("accessToken", res.data.token);
+        props.loginUser(account.username);
+        props.history.push("about");
       })
       .catch((error) => {
         console.log("ERROR:");
@@ -80,7 +81,7 @@ function Register(props) {
         <div className="login">
           Already signed up? <Link to="/login">Login</Link>
         </div>
-        <form onSubmit={submit}>
+        <form onSubmit={register}>
           <div className="names">
             <div className={`field firstName ${!fresh.firstName && errors.firstName ? "error" : ""}`}>
               <label htmlFor="firstName">

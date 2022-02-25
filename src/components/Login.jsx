@@ -21,6 +21,7 @@ function Login(props) {
       .post(endPoint, { username, password })
       .then((res) => {
         window.localStorage.setItem("accessToken", res.data.token);
+        props.loginUser(username);
         props.history.push("about)");
       })
       .catch((error) => {

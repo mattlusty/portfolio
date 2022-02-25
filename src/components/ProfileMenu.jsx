@@ -1,11 +1,11 @@
 import { withRouter } from "react-router-dom";
 import { useState } from "react";
-//
 
 import "../styles/css/ProfileMenu.css";
 
 function ProfileMenu(props) {
   var logout = () => {
+    localStorage.clear();
     props.history.push("login");
   };
 
@@ -35,7 +35,7 @@ function ProfileMenu(props) {
           </>
         ) : (
           <ul className="items">
-            <li className="login" name="leaf" label="Settings">
+            <li className="login" name="leaf" label="Settings" onClick={logout}>
               <div>Login</div>
             </li>
 

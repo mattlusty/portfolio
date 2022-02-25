@@ -30,6 +30,7 @@ const myFetch = (req) => {
     })
     .catch((error) => {
       // append request to error
+      console.log("fail here");
       error.request = req;
       throw error;
     });

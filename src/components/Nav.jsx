@@ -45,7 +45,7 @@ class Nav extends Component {
             // hidden={this.state.profileMenu.hidden}
             closed={this.state.profileMenu.closed}
             toggleProfileMenu={this.toggleProfileMenu}
-            user="mattlusty123"
+            user={this.props.user}
           />
           <div className="mobileMenuToggle" onClick={this.props.toggleSideMenu}>
             <i className="icon-times"></i>

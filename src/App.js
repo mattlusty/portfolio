@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
+import jwtDecode from "jwt-decode";
 // components
 import Nav from "./components/Nav";
 import SideMenu from "./components/SideMenu";
@@ -12,6 +13,17 @@ import Register from "./components/Register";
 
 function App() {
   let [hidden, setHidden] = useState(false);
+  let [user, setUser] = useState("");
+
+  useEffect(() => {
+    let token = localStorage.getItem("accessToken");
+    try {
+      const user = jwtDecode(token);
+      setUser(user.username);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   let toggleSideMenu = () => {
     setHidden(!hidden);
@@ -20,10 +32,14 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
+        <Route path="/login">
+          <Login loginUser={setUser} />
+        </Route>
+        <Route path="/register">
+          <Register loginUser={setUser} />
+        </Route>
         <Route path="/">
-          <Nav toggleSideMenu={toggleSideMenu} />
+          <Nav toggleSideMenu={toggleSideMenu} user={user} />
           <SideMenu toggleSideMenu={toggleSideMenu} hidden={hidden} />
           <Switch>
             <Route path="/portfolio">
