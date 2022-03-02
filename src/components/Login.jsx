@@ -25,13 +25,16 @@ function Login(props) {
         props.history.push("about)");
       })
       .catch((error) => {
-        if (error.response.status === 401) {
+        if (error.response && error.response.status === 401) {
           let _errors = { ...errors };
+          // Fetch - request sent & response receieved - fail status 401
           _errors.username = "incorrect details, please try again";
           _errors.password = "incorrect details, please try again";
           setErrors(_errors);
+        } else if (error.request) {
+          // Fetch - request sent & response receieved - fail status (other)
         } else {
-          console.log(error);
+          // Fetch - request not sent
         }
       });
   };
