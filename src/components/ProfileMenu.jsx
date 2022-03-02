@@ -4,17 +4,28 @@ import { useState } from "react";
 import "../styles/css/ProfileMenu.css";
 
 function ProfileMenu(props) {
+  let [closed, setClosed] = useState(true);
+
   var logout = () => {
     localStorage.clear();
     props.history.push("login");
   };
 
+  let toggleClose = () => {
+    console.log("TOGG");
+    setClosed(!closed);
+  };
+
+  let handleBlur = () => {
+    setClosed(true);
+  };
+
   return (
-    <div className={"ProfileMenu"}>
-      <div className="item" onClick={props.toggleProfileMenu}>
+    <div className="ProfileMenu" tabIndex="1" onBlur={handleBlur}>
+      <div className="item" onClick={toggleClose}>
         P
       </div>
-      <div className={`profileMenu ${props.closed ? "closed" : ""}`}>
+      <div className={`profileMenu ${closed ? "closed" : ""}`}>
         {props.user ? (
           <>
             <div className="header">
