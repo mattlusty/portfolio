@@ -1,0 +1,44 @@
+.CV .Portfolio {
+  // border: 1px solid red;
+}
+
+.CV .Portfolio > .content {
+  padding-top: 5px;
+  // padding-bottom: 20px;
+}
+
+.CV .Portfolio .job {
+  padding-bottom: 10px;
+}
+
+.CV .Portfolio .job .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  // margin-bottom: 10px;
+}
+
+.CV .Portfolio .job .title {
+  font-weight: bolder;
+}
+
+.Portfolio .job .link {
+  font-style: italic;
+}
+
+.Portfolio h3 {
+  margin: 15px 0px 10px;
+}
+
+.Portfolio .primary {
+  margin-bottom: -3px;
+}
+
+.Portfolio .job:last-child {
+  padding-bottom: 0px;
+}
+
+.Portfolio ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

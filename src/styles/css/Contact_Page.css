@@ -1,4 +1,4 @@
-.CV {
+.ContactPage {
   border: 1px solid #c5c5c5;
   margin: 30px 100px;
   padding: 20px;
@@ -7,11 +7,11 @@
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
 }
 
-.CV .header {
+.ContactPage__header {
   font-size: 2rem;
   padding: 10px 0;
 }
 
-.CV .content {
+.ContactPage__content {
   line-height: 2rem;
 }

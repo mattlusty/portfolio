@@ -1,0 +1,28 @@
+.Experience > .content {
+  padding-top: 5px;
+}
+
+.Experience .job .title {
+  font-weight: bolder;
+}
+
+.Experience .job {
+  padding-bottom: 10px;
+}
+
+.Experience h3 {
+  margin: 15px 0px 10px;
+}
+
+.Experience .primary {
+  margin-bottom: -3px;
+}
+
+.Experience .job:last-child {
+  padding-bottom: 0px;
+}
+
+.Experience ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

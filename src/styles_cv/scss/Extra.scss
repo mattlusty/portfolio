@@ -1,0 +1,23 @@
+.Extra {
+  // border: 1px solid red;
+  // margin-bottom: 15px;
+}
+
+.Extra > .content {
+  padding-top: 10px;
+  // padding-bottom: 20px;
+}
+
+.Extra .job .title {
+  font-weight: bolder;
+  margin-top: 5px;
+  // margin-bottom: 5px;
+}
+
+.Extra .job {
+  padding-top: 2px;
+}
+
+.Extra .job:last-child {
+  padding-bottom: 0px;
+}

@@ -1,0 +1,45 @@
+.Skills {
+  // border: 1px solid red;
+  // height: 200px;
+  // margin-bottom: 15px;
+}
+
+.Skills .header {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.Skills .content {
+  padding-top: 6px;
+  padding-bottom: 20px;
+}
+
+.Skills .card {
+  border: 1px solid rgb(223, 223, 223);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.295);
+}
+
+// replaced with global h3 style
+// .Skills .header {
+//   margin: 15px 0;
+// }
+
+.Skills .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 0px;
+}
+
+.Skills .card {
+  padding: 5px 10px 3px;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  // margin-right: 10px;
+  // margin-bottom: 10px;
+}
+
+.Skills .card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.137);
+}

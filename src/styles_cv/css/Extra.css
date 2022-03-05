@@ -1,0 +1,16 @@
+.Extra > .content {
+  padding-top: 10px;
+}
+
+.Extra .job .title {
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.Extra .job {
+  padding-top: 2px;
+}
+
+.Extra .job:last-child {
+  padding-bottom: 0px;
+}

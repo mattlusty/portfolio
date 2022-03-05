@@ -1,0 +1,26 @@
+.CV {
+  border: 1px solid red;
+  padding: 0 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.CV > .cols {
+  display: flex;
+  gap: 20px;
+}
+
+.CV .cols > .n1 {
+  flex-basis: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.CV .cols > .n2 {
+  flex-basis: 50%;
+}
+
+.CV .n2 > * {
+  margin-bottom: 20px;
+}

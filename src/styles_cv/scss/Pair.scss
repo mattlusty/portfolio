@@ -1,0 +1,22 @@
+.Pair {
+  // border: 1px solid red;
+  border-radius: 5px;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  letter-spacing: 0.09rem;
+}
+
+.Pair > * {
+  padding: 15px;
+}
+
+.Pair .field {
+  border-right: 2px solid var(--clr-grey1);
+  background-color: var(--clr-grey01);
+}
+
+.Pair .value {
+  flex-grow: 1;
+  text-align: center;
+}

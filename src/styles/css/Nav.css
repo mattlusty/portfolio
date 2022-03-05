@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr;
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
   padding: 10px 0;
+  position: relative;
+  z-index: 999;
 }
 
 .Nav > * {

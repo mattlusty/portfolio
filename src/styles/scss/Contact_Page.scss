@@ -1,4 +1,4 @@
-.Contact {
+.ContactPage {
   border: 1px solid rgb(197, 197, 197);
   // height: 600px;
   margin: 30px 100px;
@@ -8,12 +8,12 @@
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
 }
 
-.Contact .header {
+.ContactPage__header {
   // font-family: "sam";
   font-size: 2rem;
   padding: 10px 0;
 }
 
-.Contact .content {
+.ContactPage__content {
   line-height: 2rem;
 }

@@ -1,0 +1,24 @@
+.Education {
+  // border: 1px solid red;
+  // height: 200px;
+  // margin-bottom: 15px;
+}
+
+.Education > .content {
+  padding-top: 10px;
+  // padding-bottom: 20px;
+}
+
+.Education .job .title {
+  font-weight: bolder;
+  margin-top: 5px;
+  // margin-bottom: 5px;
+}
+
+.Education .job {
+  // padding-bottom: 15px;
+}
+
+.Education .job:last-child {
+  padding-bottom: 0px;
+}

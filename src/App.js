@@ -7,7 +7,7 @@ import SideMenu from "./components/SideMenu";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import CV from "./components/CV";
+import CVPage from "./components/CVPage";
 import Login from "./components/Login";
 import Register from "./components/Register";
 
@@ -46,7 +46,7 @@ function App() {
               <Portfolio />
             </Route>
             <Route path="/contact" component={Contact} />
-            <Route path="/cv" component={CV} />
+            <Route path="/cv" component={CVPage} />
             <Route path="/" component={About} />
           </Switch>
         </Route>

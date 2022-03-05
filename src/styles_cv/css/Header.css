@@ -1,0 +1,19 @@
+.Header {
+  border: 1px solid blue;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.Header .nameWrapper {
+  font-family: "rust-script";
+  font-size: 3.2rem;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.Header .cvtext {
+  font-family: "rust-script";
+}
