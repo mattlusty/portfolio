@@ -6,6 +6,12 @@
   border-radius: 15px;
   background-color: #f8f8f8;
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.467);
+  cursor: pointer;
+}
+
+.Portfolio .item:hover {
+  border: 1px solid rgb(134, 134, 134);
+  box-shadow: 0 0 20px rgba(182, 182, 182, 0.877);
 }
 
 .Portfolio .header {

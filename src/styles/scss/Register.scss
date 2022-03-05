@@ -1,0 +1,186 @@
+// .Register > .login > .header
+// .Login > .login > form > .username > label-for-username / input-id-username
+// .Login > .login > form > .password > label-for-password / input-id-password
+
+.Register {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  // border: 5px solid blue;
+  border-radius: 5px;
+  // height: 100vh;
+  margin: 0 auto 30px auto;
+  width: fit-content;
+}
+
+.Register .brand {
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 0;
+  width: fit-content;
+}
+
+.Register .brand > .matt {
+  display: flex;
+  align-items: center;
+  font-family: "sam";
+  font-size: 2rem;
+  color: rgb(55, 66, 68);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+  background-color: rgb(190, 217, 226);
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Register .brand > .lusty {
+  font-family: "sam";
+  font-size: 2rem;
+  color: rgb(55, 66, 68);
+  display: flex;
+  align-items: center;
+  // border: 1px solid blue;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Register > .register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 20px;
+  width: 380px;
+  height: fit-content;
+  // height: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+
+.Register > .register > .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;
+  background-color: rgb(240, 244, 245);
+  margin: 30px 0 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.Register > .register > .header {
+  display: flex;
+  align-items: center;
+  font-family: "sam";
+  font-size: 2.5rem;
+  color: rgb(68, 55, 55);
+  height: 90px;
+}
+
+.Register > .register > .login {
+  // border: 1px solid black;
+  margin: 30px;
+  font-size: 0.9rem;
+}
+
+.Register > .register > .login > a {
+  color: rgb(45, 150, 185);
+}
+
+.Register > .register > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // border: 1px solid red;
+  margin: 0px 0px 40px 0px;
+  width: fit-content;
+}
+
+.Register > .register > form > .names {
+  // border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.Register > .register > form > .names > .field {
+  width: 150px;
+}
+
+// not needed
+
+// .Register > .register > form > .names > .field > input {
+//   width: 100%;
+//   border: 1px solid rgb(184, 184, 184);
+//   padding: 8px;
+//   border-radius: 10px;
+// }
+
+.Register > .register > form > .email {
+  // border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.Register > .register > form > .username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Register > .register > form label {
+  display: block;
+  padding: 0px 20px 5px 0px;
+  font-size: 0.7rem;
+  margin-left: 8px;
+}
+
+.Register > .register > form input {
+  display: block;
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.Register > .register > form > button {
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(190, 217, 226, 0.37);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  margin-top: 20px;
+  font-family: "proxima";
+}
+
+.Register > .register > form > button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
+}
+
+@media (min-width: 900px) {
+  .Register {
+    // justify-content: center;
+    margin: 30px;
+    width: unset;
+  }
+
+  .Register .brand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .Register {
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+  }
+}

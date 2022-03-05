@@ -1,0 +1,153 @@
+.Login {
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  border-radius: 5px;
+  margin: 0 auto 30px auto;
+  width: fit-content;
+}
+
+.Login .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 0;
+  width: fit-content;
+}
+
+.Login .brand > .matt {
+  display: flex;
+  align-items: center;
+  font-family: "sam";
+  font-size: 2rem;
+  color: #374244;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+  background-color: #bed9e2;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Login .brand > .lusty {
+  font-family: "sam";
+  font-size: 2rem;
+  color: #374244;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  height: 50px;
+  padding: 10px;
+}
+
+.Login > .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #a8a8a8;
+  border-radius: 20px;
+  width: 380px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+
+.Login .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f5;
+  margin: 30px 0 0;
+  padding: 20px;
+  width: 100%;
+  height: 90px;
+  font-family: "sam";
+  font-size: 2.5rem;
+}
+
+.Login > .login > .register {
+  font-size: 0.9rem;
+  margin: 30px;
+}
+
+.Login > .login > .register > a {
+  color: #2d96b9;
+}
+
+.Login > .login > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 0px 40px 0px;
+  width: 300px;
+}
+
+.Login > .login > form > .username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Login > .login > form label {
+  display: block;
+  padding: 0px 20px 5px 0px;
+  font-size: 0.7rem;
+  margin-left: 8px;
+}
+
+.Login > .login > form input {
+  display: block;
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form input {
+  border: 1px solid #b8b8b8;
+}
+
+.Login > .login > form > button {
+  width: 100px;
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(190, 217, 226, 0.37);
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  margin-top: 20px;
+  font-family: "proxima";
+}
+
+.Login > .login > form > button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
+}
+
+@media (min-width: 900px) {
+  .Login {
+    grid-template-rows: 1fr;
+    margin: 30px;
+    width: unset;
+    justify-content: center;
+  }
+  .Login .brand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+}
+
+@media (min-height: 600px) {
+  .Login {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .Login {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+  }
+}

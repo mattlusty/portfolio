@@ -68,6 +68,14 @@
     padding: 10px 20px;
     cursor: pointer;
   }
+  .Nav .menu > li:hover {
+    border: 1px solid #9b9b9b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  }
+  .Nav .menu > .active:hover {
+    border: 1px solid #838383;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+  }
   .Nav .menu > .active {
     border: 1px solid #a0a0a0;
     background-color: #8ab7c4;

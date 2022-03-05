@@ -81,6 +81,16 @@
     cursor: pointer;
   }
 
+  .Nav .menu > li:hover {
+    border: 1px solid rgb(155, 155, 155);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  }
+
+  .Nav .menu > .active:hover {
+    border: 1px solid rgb(131, 131, 131);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+  }
+
   .Nav .menu > .active {
     border: 1px solid #a0a0a0;
     background-color: rgb(138, 183, 196);

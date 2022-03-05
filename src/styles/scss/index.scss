@@ -29,6 +29,10 @@ th {
   text-align: unset;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -50,6 +54,24 @@ input {
   font-family: "proxima";
   font-size: 1rem;
   color: #0d0c22;
+}
+
+input {
+  outline: none;
+}
+
+form input:focus {
+  /* box-shadow: 0 0 3px grey; */
+  box-shadow: rgb(231, 231, 231) 0px 0px 0px 3px;
+}
+
+form .error input {
+  border-color: red;
+}
+
+form .error span {
+  margin-left: 4px;
+  color: red;
 }
 
 /*8888b  .d88b.  d8b   db d888888b .d8888. 

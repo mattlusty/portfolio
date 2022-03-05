@@ -24,16 +24,20 @@ class Nav extends Component {
         <div className="title">Matthew Lusty</div>
         <div className="rightSide">
           <ul className="menu">
-            <li id="0" className={this.state.active == 0 ? "active" : ""} onClick={this.navSelect}>
+            <li id="0" className={this.state.active == 0 ? "active" : ""} onClick={(e) => this.navSelect(e, "about")}>
               About
             </li>
-            <li id="1" className={this.state.active == 1 ? "active" : ""} onClick={this.navSelect}>
+            <li
+              id="1"
+              className={this.state.active == 1 ? "active" : ""}
+              onClick={(e) => this.navSelect(e, "portfolio")}
+            >
               Portfolio
             </li>
-            <li id="2" className={this.state.active == 2 ? "active" : ""} onClick={this.navSelect}>
+            <li id="2" className={this.state.active == 2 ? "active" : ""} onClick={(e) => this.navSelect(e, "contact")}>
               Contact
             </li>
-            <li id="3" className={this.state.active == 3 ? "active" : ""} onClick={this.navSelect}>
+            <li id="3" className={this.state.active == 3 ? "active" : ""} onClick={(e) => this.navSelect(e, "cv")}>
               CV
             </li>
           </ul>
@@ -41,7 +45,7 @@ class Nav extends Component {
             // hidden={this.state.profileMenu.hidden}
             closed={this.state.profileMenu.closed}
             toggleProfileMenu={this.toggleProfileMenu}
-            user="mattlusty123"
+            user={this.props.user}
           />
           <div className="mobileMenuToggle" onClick={this.props.toggleSideMenu}>
             <i className="icon-times"></i>
