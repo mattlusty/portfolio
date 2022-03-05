@@ -14,7 +14,7 @@
   width: fit-content;
 }
 
-.Login .brand {
+.Login__brand {
   // position: absolute;
   // top: 0px;
   // left: 0px;
@@ -29,7 +29,7 @@
   width: fit-content;
 }
 
-.Login .brand > .matt {
+.Login__matt {
   display: flex;
   align-items: center;
   font-family: "sam";
@@ -43,7 +43,7 @@
   padding: 10px;
 }
 
-.Login .brand > .lusty {
+.Login__lusty {
   font-family: "sam";
   font-size: 2rem;
   color: rgb(55, 66, 68);
@@ -55,7 +55,7 @@
   padding: 10px;
 }
 
-.Login > .login {
+.Login__login {
   // position: relative;
   // align-self: center;
   display: flex;
@@ -69,7 +69,7 @@
   // padding-bottom: 10px;
 }
 
-.Login .header {
+.Login__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,16 +83,16 @@
   font-size: 2.5rem;
 }
 
-.Login > .login > .register {
+.Login__register {
   font-size: 0.9rem;
   margin: 30px;
 }
 
-.Login > .login > .register > a {
+.Login__register > a {
   color: rgb(45, 150, 185);
 }
 
-.Login > .login > form {
+.Login__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,20 +100,15 @@
   margin: 0px 0px 40px 0px;
   width: 300px;
 }
-.Login > .login > form > .username {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.Login > .login > form label {
+.Login__label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.7rem;
   margin-left: 8px;
 }
 
-.Login > .login > form input {
+.Login__form input {
   display: block;
   padding: 8px;
   border-radius: 10px;
@@ -125,7 +120,7 @@ form input {
   border: 1px solid rgb(184, 184, 184);
 }
 
-.Login > .login > form > button {
+.Login__button {
   width: 100px;
   border: 1px solid rgb(170, 170, 170);
   border-radius: 8px;
@@ -138,7 +133,7 @@ form input {
   font-family: "proxima";
 }
 
-.Login > .login > form > button:hover {
+.Login__button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
 }
 
@@ -151,7 +146,7 @@ form input {
     justify-content: center;
   }
 
-  .Login .brand {
+  .Login__brand {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -163,7 +158,7 @@ form input {
   .Login {
     height: 100vh;
   }
-  .Login .brand {
+  .Login__brand {
     // height: 70px;
   }
 }
