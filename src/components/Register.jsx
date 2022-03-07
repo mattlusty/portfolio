@@ -72,45 +72,72 @@ function Register(props) {
 
   return (
     <div className="Register">
-      <div className="brand">
-        <div className="matt">Matthew</div>
-        <div className="lusty">Lusty</div>
+      <div className="Register__brand">
+        <div className="Register__matt">Matthew</div>
+        <div className="Register__lusty">Lusty</div>
       </div>
-      <div className="register">
-        <div className="header">Create an Account</div>
-        <div className="login">
+      <div className="Register__register">
+        <div className="Register__header">Create an Account</div>
+        <div className="Register__login">
           Already signed up? <Link to="/login">Login</Link>
         </div>
-        <form onSubmit={register}>
-          <div className="names">
-            <div className={`field firstName ${!fresh.firstName && errors.firstName ? "error" : ""}`}>
-              <label htmlFor="firstName">
+        <form className="Register__form" onSubmit={register}>
+          <div className="Register__names">
+            <div
+              className={`Register__field Register__field--names ${
+                !fresh.firstName && errors.firstName ? "error" : ""
+              }`}
+            >
+              <label className="Register__label" className="Register__label" htmlFor="firstName">
                 First Name
                 {!fresh.firstName ? <span>{errors.firstName}</span> : ""}
               </label>
-              <input name="firstName" onChange={handleChange} onBlur={handleBlur} id="firstName"></input>
+              <input
+                className="Register__input"
+                name="firstName"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                id="firstName"
+              ></input>
             </div>
-            <div className={`field lastName ${!fresh.lastName && errors.lastName ? "error" : ""}`}>
-              <label htmlFor="lastName">
+            <div
+              className={`Register__field Register__field--names ${!fresh.lastName && errors.lastName ? "error" : ""}`}
+            >
+              <label className="Register__label" htmlFor="lastName">
                 Last Name
                 {!fresh.lastName && errors.lastName ? <span>{errors.lastName}</span> : ""}
               </label>
-              <input name="lastName" onChange={handleChange} onBlur={handleBlur} id="lastName"></input>
+              <input
+                className="Register__input"
+                name="lastName"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                id="lastName"
+              ></input>
             </div>
           </div>
-          <div className={`field email ${!fresh.email && errors.email ? "error" : ""}`}>
-            <label htmlFor="email">
+          <div className={`Register__field Register__field--email ${!fresh.email && errors.email ? "error" : ""}`}>
+            <label className="Register__label" htmlFor="email">
               Email
               {!fresh.email && errors.email ? <span>{errors.email}</span> : ""}
             </label>
-            <input name="email" onChange={handleChange} onBlur={handleBlur} id="email"></input>
+            <input
+              className="Register__input"
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              id="email"
+            ></input>
           </div>
-          <div className={`field username ${!fresh.username && errors.username ? "error" : ""}`}>
-            <label htmlFor="username">
+          <div
+            className={`Register__field Register__field--username ${!fresh.username && errors.username ? "error" : ""}`}
+          >
+            <label className="Register__label" htmlFor="username">
               Username
               {!fresh.username && errors.username ? <span>{errors.username}</span> : ""}
             </label>
             <input
+              className="Register__input"
               name="username"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -118,12 +145,15 @@ function Register(props) {
               id="username"
             ></input>
           </div>
-          <div className={`field password ${!fresh.password && errors.password ? "error" : ""}`}>
-            <label htmlFor="password">
+          <div
+            className={`Register__field Register__field--password ${!fresh.password && errors.password ? "error" : ""}`}
+          >
+            <label className="Register__label" htmlFor="password">
               Password
               {!fresh.password && errors.password ? <span>{errors.password}</span> : ""}
             </label>
             <input
+              className="Register__input"
               name="password"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -132,7 +162,7 @@ function Register(props) {
               id="password"
             ></input>
           </div>
-          <button>Sign Up</button>
+          <button className="Register__button">Sign Up</button>
         </form>
       </div>
     </div>
