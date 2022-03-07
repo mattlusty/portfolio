@@ -4,21 +4,22 @@
   // margin-bottom: 15px;
 }
 
-.Education > .content {
-  padding-top: 10px;
+.Education__content {
+  // padding-top: 10px;
   // padding-bottom: 20px;
 }
 
-.Education .job .title {
+.Education__job {
+  // padding-bottom: 15px;
+}
+
+// should this not under card__title
+.Education__jobTitle {
   font-weight: bolder;
   margin-top: 5px;
   // margin-bottom: 5px;
 }
 
-.Education .job {
-  // padding-bottom: 15px;
-}
-
-.Education .job:last-child {
+.Education__job:last-child {
   padding-bottom: 0px;
 }

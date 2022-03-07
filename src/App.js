@@ -6,7 +6,7 @@ import Nav from "./components/Nav";
 import SideMenu from "./components/SideMenu";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import ContactPage from "./components/ContactPage";
 import CVPage from "./components/CVPage";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -45,7 +45,7 @@ function App() {
             <Route path="/portfolio">
               <Portfolio />
             </Route>
-            <Route path="/contact" component={Contact} />
+            <Route path="/contact" component={ContactPage} />
             <Route path="/cv" component={CVPage} />
             <Route path="/" component={About} />
           </Switch>

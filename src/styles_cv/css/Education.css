@@ -1,12 +1,8 @@
-.Education > .content {
-  padding-top: 10px;
-}
-
-.Education .job .title {
+.Education__jobTitle {
   font-weight: bolder;
   margin-top: 5px;
 }
 
-.Education .job:last-child {
+.Education__job:last-child {
   padding-bottom: 0px;
 }

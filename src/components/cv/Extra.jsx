@@ -4,27 +4,27 @@ function Extra(props) {
   return (
     <div>
       <div className="Extra card">
-        <h2 className="headerStrip">Extracurricula</h2>
-        <div className="content">
-          <div className="job">
-            <div className="title">Volunteer work for Sea Cadets</div>
-            <div className="content">Led lessons and supervised cadets trips</div>
+        <h2 className="card__headerStrip">Extracurricula</h2>
+        <div className="Extra__content card__content">
+          <div className="Extra__job">
+            <div className="Extra__jobTitle">Volunteer work for Sea Cadets</div>
+            <div>Led lessons and supervised cadets trips</div>
           </div>
-          <div className="job">
-            <div className="title">Gold Duke of Edinburgh Award</div>
-            <div className="content">Expedition across Royal National Park, Sydney</div>
+          <div className="Extra__job">
+            <div className="Extra__jobTitle">Gold Duke of Edinburgh Award</div>
+            <div>Expedition across Royal National Park, Sydney</div>
           </div>
-          <div className="job">
-            <div className="title">Three Peaks Challenge UK</div>
-            <div className="content">Climbed UK’s three highest peaks</div>
+          <div className="Extra__job">
+            <div className="Extra__jobTitle">Three Peaks Challenge UK</div>
+            <div>Climbed UK’s three highest peaks</div>
           </div>
-          <div className="job">
-            <div className="title">Travelling Australasia and Asia</div>
-            <div className="content">Horse riding, scuba diving, friends and memories</div>
+          <div className="Extra__job">
+            <div className="Extra__jobTitle">Travelling Australasia and Asia</div>
+            <div>Horse riding, scuba diving, friends and memories</div>
           </div>
-          <div className="job">
-            <div className="title">10 day Hike across the Outer Hebrides</div>
-            <div className="content">Torrential weather with only a tarp for a tent.</div>
+          <div className="Extra__job">
+            <div className="Extra__jobTitle">10 day Hike across the Outer Hebrides</div>
+            <div>Torrential weather with only a tarp for a tent.</div>
           </div>
         </div>
       </div>

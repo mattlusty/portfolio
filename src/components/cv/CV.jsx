@@ -6,7 +6,7 @@ import Header from "./Header";
 import Contact from "./Contact";
 import Statement from "./Statement";
 import Experience from "./Experience";
-import Portfolio from "./Portfolio";
+import PortfolioList from "./PortfolioList";
 import Skills from "./Skills";
 import Education from "./Education";
 import Extra from "./Extra";
@@ -19,12 +19,12 @@ class CV extends Component {
         <Header />
         <Contact />
         <Statement />
-        <div className="cols">
-          <div className="n1">
-            <Portfolio />
+        <div className="CV__cols">
+          <div className="CV__n1">
+            <PortfolioList />
             <Experience />
           </div>
-          <div className="n2">
+          <div className="CV__n2">
             <Skills />
             <Education />
             <Extra />

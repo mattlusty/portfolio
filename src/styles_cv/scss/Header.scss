@@ -1,11 +1,11 @@
 .Header {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   margin-bottom: 15px;
   margin-top: 20px;
   // border: 1px solid red;
 }
 
-.Header .nameWrapper {
+.Header__nameWrapper {
   // border: 1px solid red;
   font-family: "rust-script";
   font-size: 3.2rem;
@@ -17,7 +17,7 @@
   margin: 30px 0;
 }
 
-.Header .cvtext {
+.Header__cvtext {
   // border: 1px solid red;
   // text-align: center;
   font-family: "rust-script";

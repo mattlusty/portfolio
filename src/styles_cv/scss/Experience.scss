@@ -2,32 +2,32 @@
   // border: 1px solid red;
 }
 
-.Experience > .content {
+.Experience__content {
   padding-top: 5px;
   // padding-bottom: 20px;
 }
 
-.Experience .job .title {
+.Experience__jobTitle {
   font-weight: bolder;
 }
 
-.Experience .job {
+.Experience__job {
   padding-bottom: 10px;
 }
 
-.Experience h3 {
+.Experience__header {
   margin: 15px 0px 10px;
 }
 
-.Experience .primary {
+.Experience__primary {
   margin-bottom: -3px;
 }
 
-.Experience .job:last-child {
+.Experience__job:last-child {
   padding-bottom: 0px;
 }
 
-.Experience ul {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.Experience__ul {
+  list-style: disc;
+  padding-left: 15px;
 }

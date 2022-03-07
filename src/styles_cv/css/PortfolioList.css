@@ -1,38 +1,34 @@
-.PortfolioList > .content {
+.PortfolioList__content {
   padding-top: 5px;
 }
 
-.PortfolioList .job {
+.PortfolioList__job {
   padding-bottom: 10px;
 }
 
-.PortfolioList .job .header {
+.PortfolioList__header {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.PortfolioList .job .title {
+.PortfolioList__jobTitle {
   font-weight: bolder;
 }
 
-.PortfolioList .job .link {
+.PortfolioList__link {
   font-style: italic;
 }
 
-.PortfolioList h3 {
-  margin: 15px 0px 10px;
-}
-
-.PortfolioList .primary {
+.PortfolioList__primary {
   margin-bottom: -3px;
 }
 
-.PortfolioList .job:last-child {
+.PortfolioList__job:last-child {
   padding-bottom: 0px;
 }
 
-.PortfolioList ul {
+.PortfolioList__ul {
   padding-top: 0px;
   padding-bottom: 0px;
 }

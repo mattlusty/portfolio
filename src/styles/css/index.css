@@ -86,8 +86,35 @@ YP       `Y88P'  VP   V8P    YP    `8888*/
 }
 
 @font-face {
+  font-family: "proxima";
+  src: url("../fonts/proximaBold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "sam";
   src: url("../fonts/sam.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rust-basic";
+  src: url("../fonts/rust-basic2.woff2") format("woff2"), url("../fonts/rust-basic1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rust-block";
+  src: url("../fonts/rust-block2.woff2") format("woff2"), url("../fonts/rust-block1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rust-script";
+  src: url("../fonts/rust-script2.woff2") format("woff2"), url("../fonts/rust-script1.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

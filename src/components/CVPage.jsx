@@ -7,7 +7,7 @@ import "../styles/css/CVPage.css";
 import CV from "./cv/CV";
 
 function CVPage(props) {
-  let [access, setAccess] = useState(false);
+  let [access, setAccess] = useState(true);
   return (
     <div className="CVPage">
       {access ? <CV /> : <div className="CVPage__noAccess">Noo Access - Please Login as Authorised User</div>}

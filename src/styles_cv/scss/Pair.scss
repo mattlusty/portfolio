@@ -1,5 +1,6 @@
+// Field / Value Pair - horizontal layout / with divider
+
 .Pair {
-  // border: 1px solid red;
   border-radius: 5px;
   display: flex;
   flex-grow: 1;
@@ -7,16 +8,14 @@
   letter-spacing: 0.09rem;
 }
 
-.Pair > * {
+.Pair__field {
   padding: 15px;
+  border-right: 2px solid rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
 }
 
-.Pair .field {
-  border-right: 2px solid var(--clr-grey1);
-  background-color: var(--clr-grey01);
-}
-
-.Pair .value {
+.Pair__value {
+  padding: 15px;
   flex-grow: 1;
   text-align: center;
 }

@@ -1,23 +1,7 @@
-.CV .Contact {
+.Contact {
   // border: 1px solid red;
   display: flex;
   gap: 20px;
   // justify-content: space-between;
   margin-bottom: 20px;
 }
-
-.CV .Contact .email {
-  border-radius: 5px;
-  box-shadow: 0 0 5px var(--shd-grey1);
-  cursor: pointer;
-}
-
-.CV .Contact .email:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.295);
-}
-
-// .CV .cv .Contact .card {
-//   padding: 10px;
-//   box-shadow: 0 0 5px rgba(0, 0, 0, 0.281);
-//   letter-spacing: 0.09rem;
-// }
