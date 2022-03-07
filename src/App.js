@@ -12,7 +12,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 
 function App() {
-  let [hidden, setHidden] = useState(false);
+  let [hidden, setHidden] = useState(true);
   let [user, setUser] = useState("");
 
   useEffect(() => {
