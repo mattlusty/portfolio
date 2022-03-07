@@ -1,4 +1,4 @@
-.Portfolio .item {
+.Portfolio__item {
   border: 1px solid rgb(197, 197, 197);
   // height: 600px;
   margin: 30px 30px;
@@ -9,31 +9,31 @@
   cursor: pointer;
 }
 
-.Portfolio .item:hover {
+.Portfolio__item:hover {
   border: 1px solid rgb(134, 134, 134);
   box-shadow: 0 0 20px rgba(182, 182, 182, 0.877);
 }
 
-.Portfolio .header {
+.Portfolio__header {
   // font-family: "sam";
   font-size: 2rem;
   padding: 10px 0;
 }
 
-.Portfolio .content {
+.Portfolio__content {
   line-height: 2rem;
 }
 
 @media only screen and (min-width: 890px) {
-  .Portfolio .item {
+  .Portfolio__item {
     margin: 30px 100px;
   }
 
-  .Portfolio .header {
+  .Portfolio__header {
     font-size: 2rem;
   }
 
-  .Portfolio .content {
+  .Portfolio__content {
     line-height: 2rem;
   }
 }
