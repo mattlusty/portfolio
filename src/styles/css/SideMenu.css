@@ -1,12 +1,9 @@
-.SideMenu.hidden {
-  width: 0px;
-}
-
 .SideMenu {
   border-right: 1px solid #969696;
   background-color: whitesmoke;
   position: fixed;
   top: 0;
+  z-index: 999;
   width: 250px;
   height: 100vh;
   box-sizing: content-box;
@@ -16,13 +13,17 @@
   transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-.SideMenu .header {
+.SideMenu--hidden {
+  width: 0px;
+}
+
+.SideMenu__header {
   padding: 10px 10px 0 10px;
   font-family: "sam";
   font-size: 2rem;
 }
 
-.SideMenu .header .inner {
+.SideMenu__headerInner {
   border: 1px solid #969696;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
@@ -35,7 +36,7 @@
   cursor: pointer;
 }
 
-.menuHeader {
+.SideMenu__menuHeader {
   box-shadow: var(--shad-lighter);
   border-bottom: 1px solid var(--color-menu-border);
 }
