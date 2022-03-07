@@ -6,7 +6,7 @@ import "../styles/css/ProfileMenu.css";
 function ProfileMenu(props) {
   let [closed, setClosed] = useState(true);
 
-  var logout = () => {
+  var loginPage = () => {
     localStorage.clear();
     props.history.push("login");
   };
@@ -22,35 +22,35 @@ function ProfileMenu(props) {
 
   return (
     <div className="ProfileMenu" tabIndex="1" onBlur={handleBlur}>
-      <div className="item" onClick={toggleClose}>
+      <div className="ProfileMenu__button" onClick={toggleClose}>
         P
       </div>
-      <div className={`profileMenu ${closed ? "closed" : ""}`}>
+      <div className={`ProfileMenu__profileMenu ${closed ? "ProfileMenu__profileMenu--closed" : ""}`}>
         {props.user ? (
           <>
-            <div className="header">
-              <div className="icon">P</div>
-              <div className="user">{props.user}</div>
+            <div className="ProfileMenu__header">
+              <div className="ProfileMenu__icon">P</div>
+              <div className="ProfileMenu__user">{props.user}</div>
             </div>
-            <ul className="items">
-              <li name="home" label="Account">
+            <ul className="ProfileMenu__items">
+              <li className="ProfileMenu__li" name="home" label="Account">
                 <div>Account</div>
               </li>
-              <li name="leaf" label="Settings">
+              <li className="ProfileMenu__li" name="leaf" label="Settings">
                 <div>Settings</div>
               </li>
-              <li className="logout" onClick={logout} name="logout" label="logout">
+              <li className="ProfileMenu__li ProfileMenu__li--logout" onClick={loginPage} name="logout" label="logout">
                 <div>Log out</div>
               </li>
             </ul>
           </>
         ) : (
-          <ul className="items">
-            <li className="login" name="leaf" label="Settings" onClick={logout}>
+          <ul className="ProfileMenu__items">
+            <li className="ProfileMenu__li" name="leaf" label="login" onClick={loginPage}>
               <div>Login</div>
             </li>
 
-            <li name="leaf" label="Settings">
+            <li className="ProfileMenu__li" name="leaf" label="Settings">
               <div>Settings</div>
             </li>
           </ul>
