@@ -1,7 +1,3 @@
-.SideMenu.hidden {
-  width: 0px;
-}
-
 .SideMenu {
   border-right: 1px solid rgb(150, 150, 150);
   background-color: rgb(245, 245, 245);
@@ -9,6 +5,7 @@
   // POSITION
   position: fixed; //not needed now
   top: 0;
+  z-index: 999;
 
   // MAIN
   width: 250px; // (252px - originally) (300px - was then this) (242px - with no logo left margin)
@@ -24,13 +21,17 @@
   transition: 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-.SideMenu .header {
+.SideMenu--hidden {
+  width: 0px;
+}
+
+.SideMenu__header {
   padding: 10px 10px 0 10px;
   font-family: "sam";
   font-size: 2rem;
 }
 
-.SideMenu .header .inner {
+.SideMenu__headerInner {
   border: 1px solid rgb(150, 150, 150);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
@@ -48,7 +49,7 @@
   cursor: pointer;
 }
 
-.menuHeader {
+.SideMenu__menuHeader {
   box-shadow: var(--shad-lighter);
   border-bottom: 1px solid var(--color-menu-border);
 }

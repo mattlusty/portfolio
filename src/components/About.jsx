@@ -4,8 +4,8 @@ import "../styles/css/About.css";
 function About(props) {
   return (
     <div className="About">
-      <div className="header">About Me</div>
-      <div className="content">
+      <div className="About__header">About Me</div>
+      <div className="About__content">
         An explorer of technology, science and nature - I seek to continuously expand the frontier of my understanding
         and to share discoveries with others. Whilst completing my Masters of Physics Degree I developed a keen interest
         in the awesome power of the web as a platform to create and share powerful resources with people across the

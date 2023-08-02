@@ -1,0 +1,34 @@
+.PortfolioList__content {
+  padding-top: 5px;
+}
+
+.PortfolioList__job {
+  padding-bottom: 10px;
+}
+
+.PortfolioList__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.PortfolioList__jobTitle {
+  font-weight: bolder;
+}
+
+.PortfolioList__link {
+  font-style: italic;
+}
+
+.PortfolioList__primary {
+  margin-bottom: -3px;
+}
+
+.PortfolioList__job:last-child {
+  padding-bottom: 0px;
+}
+
+.PortfolioList__ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

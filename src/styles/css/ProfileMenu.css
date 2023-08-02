@@ -1,9 +1,10 @@
 .ProfileMenu {
   position: relative;
   margin: 0 20px;
+  display: none;
 }
 
-.ProfileMenu .item {
+.ProfileMenu__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,7 @@
   cursor: pointer;
 }
 
-.ProfileMenu .profileMenu {
+.ProfileMenu__profileMenu {
   border: 1px solid #696969;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
   background-color: #f8f8f8;
@@ -26,11 +27,11 @@
   min-width: 180px;
 }
 
-.ProfileMenu .profileMenu.closed {
+.ProfileMenu__profileMenu--closed {
   display: none;
 }
 
-.ProfileMenu .profileMenu > .header {
+.ProfileMenu__header {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   background-color: white;
@@ -42,7 +43,7 @@
   white-space: nowrap;
 }
 
-.ProfileMenu .profileMenu > .header > .icon {
+.ProfileMenu__icon {
   display: flex;
   color: #bebebe;
   justify-content: center;
@@ -54,53 +55,27 @@
   margin-right: 5px;
 }
 
-.ProfileMenu .profileMenu > .header > .user {
+.ProfileMenu__user {
   display: flex;
   align-items: center;
   border-radius: 5px;
   padding: 5px;
 }
 
-.ProfileMenu .profileMenu > .header > .close {
-  display: flex;
-  align-self: flex-start;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
-
-.ProfileMenu .profileMenu > .header > .close > * {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  border: 1px solid black;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.ProfileMenu .profileMenu > ul {
+.ProfileMenu__items {
   display: flex;
   flex-direction: column;
   padding: 3px;
 }
 
-.ProfileMenu .profileMenu > ul > li {
+.ProfileMenu__li {
   padding: 15px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.ProfileMenu .profileMenu > ul > li:hover {
+.ProfileMenu__li:hover {
   background-color: #ececec;
-}
-
-.ProfileMenu {
-  display: none;
 }
 
 @media only screen and (min-width: 890px) {

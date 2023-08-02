@@ -1,0 +1,25 @@
+.Education {
+  // border: 1px solid red;
+  // height: 200px;
+  // margin-bottom: 15px;
+}
+
+.Education__content {
+  // padding-top: 10px;
+  // padding-bottom: 20px;
+}
+
+.Education__job {
+  // padding-bottom: 15px;
+}
+
+// should this not under card__title
+.Education__jobTitle {
+  font-weight: bolder;
+  margin-top: 5px;
+  // margin-bottom: 5px;
+}
+
+.Education__job:last-child {
+  padding-bottom: 0px;
+}

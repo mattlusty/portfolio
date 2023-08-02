@@ -14,14 +14,14 @@ class SideMenu extends Component {
     this.props.toggleMenu();
   };
   render() {
-    let hidden = this.props.hidden ? "hidden" : "";
+    let hidden = this.props.hidden ? "SideMenu--hidden" : "";
     return (
-      <div className={`SideMenu ${hidden}`}>
-        <div className="sideMenu">
-          <div className="header">
-            <div className="inner">Menu</div>
+      <div className={`SideMenu ${this.props.hidden ? "SideMenu--hidden" : ""}`}>
+        <div className="SideMenu__sideMenu">
+          <div className="SideMenu__header">
+            <div className="SideMenu__headerInner">Menu</div>
           </div>
-          <div className="items">
+          <div className="SideMenu__items">
             <ItemName onClick={this.navSelect} name="home" label="About" />
             <ItemName onClick={this.navSelect} name="leaf" label="Portfolio" />
             <ItemName onClick={this.navSelect} name="leaf" label="Contact" />

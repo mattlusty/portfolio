@@ -6,13 +6,13 @@ import Nav from "./components/Nav";
 import SideMenu from "./components/SideMenu";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import CV from "./components/CV";
+import ContactPage from "./components/ContactPage";
+import CVPage from "./components/CVPage";
 import Login from "./components/Login";
 import Register from "./components/Register";
 
 function App() {
-  let [hidden, setHidden] = useState(false);
+  let [hidden, setHidden] = useState(true);
   let [user, setUser] = useState("");
 
   useEffect(() => {
@@ -45,8 +45,8 @@ function App() {
             <Route path="/portfolio">
               <Portfolio />
             </Route>
-            <Route path="/contact" component={Contact} />
-            <Route path="/cv" component={CV} />
+            <Route path="/contact" component={ContactPage} />
+            <Route path="/cv" component={CVPage} />
             <Route path="/" component={About} />
           </Switch>
         </Route>

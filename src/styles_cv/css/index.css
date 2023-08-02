@@ -1,0 +1,50 @@
+body {
+  padding: 0px;
+  margin: 10px;
+  font-family: "proxima";
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.06rem;
+  color: #505050;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: normal;
+  letter-spacing: 0.09rem;
+}
+
+ul {
+  margin: 0px;
+  padding: 15px;
+  padding-right: 0px;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  font-weight: normal;
+  color: #505050;
+  background-color: #d2e3e4;
+  border: 1px solid #8b8b8b;
+}
+
+:root {
+  --clr-grey01: rgb(248, 248, 248);
+  --clr-grey1: rgba(0, 0, 0, 0.055);
+  --shd-grey1: rgba(0, 0, 0, 0.226);
+}

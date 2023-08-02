@@ -14,7 +14,7 @@
   width: fit-content;
 }
 
-.Register .brand {
+.Register__brand {
   align-self: start;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
   width: fit-content;
 }
 
-.Register .brand > .matt {
+.Register__matt {
   display: flex;
   align-items: center;
   font-family: "sam";
@@ -37,7 +37,7 @@
   padding: 10px;
 }
 
-.Register .brand > .lusty {
+.Register__lusty {
   font-family: "sam";
   font-size: 2rem;
   color: rgb(55, 66, 68);
@@ -49,7 +49,7 @@
   padding: 10px;
 }
 
-.Register > .register {
+.Register__register {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
 }
 
-.Register > .register > .header {
+.Register__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@
   width: 100%;
 }
 
-.Register > .register > .header {
+.Register__header {
   display: flex;
   align-items: center;
   font-family: "sam";
@@ -81,17 +81,17 @@
   height: 90px;
 }
 
-.Register > .register > .login {
+.Register__login {
   // border: 1px solid black;
   margin: 30px;
   font-size: 0.9rem;
 }
 
-.Register > .register > .login > a {
+.Register__login > a {
   color: rgb(45, 150, 185);
 }
 
-.Register > .register > form {
+.Register__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,14 +100,14 @@
   width: fit-content;
 }
 
-.Register > .register > form > .names {
+.Register__names {
   // border: 1px solid blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-.Register > .register > form > .names > .field {
+.Register__field--names {
   width: 150px;
 }
 
@@ -120,26 +120,26 @@
 //   border-radius: 10px;
 // }
 
-.Register > .register > form > .email {
+.Register__email {
   // border: 1px solid blue;
   display: flex;
   flex-direction: column;
 }
 
-.Register > .register > form > .username {
+.Register__username {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Register > .register > form label {
+.Register__label {
   display: block;
   padding: 0px 20px 5px 0px;
   font-size: 0.7rem;
   margin-left: 8px;
 }
 
-.Register > .register > form input {
+.Register__input {
   display: block;
   padding: 8px;
   border-radius: 10px;
@@ -147,7 +147,7 @@
   margin-bottom: 15px;
 }
 
-.Register > .register > form > button {
+.Register__button {
   border: 1px solid rgb(170, 170, 170);
   border-radius: 8px;
   padding: 10px;
@@ -158,7 +158,7 @@
   font-family: "proxima";
 }
 
-.Register > .register > form > button:hover {
+.Register__button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
 }
 
@@ -169,7 +169,7 @@
     width: unset;
   }
 
-  .Register .brand {
+  .Register__brand {
     position: absolute;
     top: 0px;
     left: 0px;

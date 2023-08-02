@@ -21,23 +21,35 @@ class Nav extends Component {
   render() {
     return (
       <div className="Nav">
-        <div className="title">Matthew Lusty</div>
-        <div className="rightSide">
-          <ul className="menu">
-            <li id="0" className={this.state.active == 0 ? "active" : ""} onClick={(e) => this.navSelect(e, "about")}>
+        <div className="Nav__title">Matthew Lusty</div>
+        <div className="Nav__rightSide">
+          <ul className="Nav__menu">
+            <li
+              id="0"
+              className={`Nav__li ${this.state.active == 0 ? "Nav__li--active" : ""}`}
+              onClick={(e) => this.navSelect(e, "about")}
+            >
               About
             </li>
             <li
               id="1"
-              className={this.state.active == 1 ? "active" : ""}
+              className={`Nav__li ${this.state.active == 1 ? "Nav__li--active" : ""}`}
               onClick={(e) => this.navSelect(e, "portfolio")}
             >
               Portfolio
             </li>
-            <li id="2" className={this.state.active == 2 ? "active" : ""} onClick={(e) => this.navSelect(e, "contact")}>
+            <li
+              id="2"
+              className={`Nav__li ${this.state.active == 2 ? "Nav__li--active" : ""}`}
+              onClick={(e) => this.navSelect(e, "contact")}
+            >
               Contact
             </li>
-            <li id="3" className={this.state.active == 3 ? "active" : ""} onClick={(e) => this.navSelect(e, "cv")}>
+            <li
+              id="3"
+              className={`Nav__li ${this.state.active == 3 ? "Nav__li--active" : ""}`}
+              onClick={(e) => this.navSelect(e, "cv")}
+            >
               CV
             </li>
           </ul>
@@ -47,7 +59,7 @@ class Nav extends Component {
             toggleProfileMenu={this.toggleProfileMenu}
             user={this.props.user}
           />
-          <div className="mobileMenuToggle" onClick={this.props.toggleSideMenu}>
+          <div className="Nav__mobileMenuToggle" onClick={this.props.toggleSideMenu}>
             <i className="icon-times"></i>
           </div>
         </div>

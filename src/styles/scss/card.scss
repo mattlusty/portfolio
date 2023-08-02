@@ -1,0 +1,22 @@
+.card {
+  // border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(196, 196, 196);
+  overflow: hidden;
+  // padding: 10px;
+}
+
+.card__headerStrip {
+  background-color: var(--clr-grey01);
+  padding: 15px;
+  // border-bottom: 2px solid var(--clr-grey1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
+  // letter-spacing: 0.06rem;
+
+  // font-weight: bolder;
+}
+
+.card__content {
+  padding: 15px;
+  line-height: 1.4rem;
+}

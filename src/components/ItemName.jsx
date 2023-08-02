@@ -6,8 +6,8 @@ class ItemName extends Component {
   render() {
     return (
       <div onClick={(e) => this.props.onClick(e, this.props.label)} className="ItemName">
-        <i className={`icon-${this.props.name}`}></i>
-        <span className="itemLabel">{this.props.label}</span>
+        <i className={`ItemName_i icon-${this.props.name}`}></i>
+        <span className="ItemName__label">{this.props.label}</span>
       </div>
     );
   }

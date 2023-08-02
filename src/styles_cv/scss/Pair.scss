@@ -1,0 +1,21 @@
+// Field / Value Pair - horizontal layout / with divider
+
+.Pair {
+  border-radius: 5px;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  letter-spacing: 0.09rem;
+}
+
+.Pair__field {
+  padding: 15px;
+  border-right: 2px solid rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
+}
+
+.Pair__value {
+  padding: 15px;
+  flex-grow: 1;
+  text-align: center;
+}

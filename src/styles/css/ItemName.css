@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.ItemName i {
+.ItemName_i {
   width: 30px;
   height: 30px;
   display: flex;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.itemLabel {
+.ItemName__label {
   flex-shrink: 0;
   margin-left: 10px;
 }

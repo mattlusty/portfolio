@@ -1,0 +1,8 @@
+.Education__jobTitle {
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.Education__job:last-child {
+  padding-bottom: 0px;
+}

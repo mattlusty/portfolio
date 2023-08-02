@@ -1,0 +1,19 @@
+.Pair {
+  border-radius: 5px;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  letter-spacing: 0.09rem;
+}
+
+.Pair__field {
+  padding: 15px;
+  border-right: 2px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.Pair__value {
+  padding: 15px;
+  flex-grow: 1;
+  text-align: center;
+}

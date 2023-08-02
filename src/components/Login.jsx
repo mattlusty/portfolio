@@ -70,18 +70,18 @@ function Login(props) {
 
   return (
     <div className="Login">
-      <div className="brand">
-        <div className="matt">Matthew</div>
-        <div className="lusty">Lusty</div>
+      <div className="Login__brand">
+        <div className="Login__matt">Matthew</div>
+        <div className="Login__lusty">Lusty</div>
       </div>
-      <div className="login">
-        <div className="header">Sign In</div>
-        <div className="register">
+      <div className="Login__login">
+        <div className="Login__header">Sign In</div>
+        <div className="Login__register">
           Need an account? <Link to="/register">Register</Link>
         </div>
-        <form onSubmit={login}>
-          <div className={`field username ${errors.username ? "error" : ""}`}>
-            <label htmlFor="username">
+        <form className="Login__form" onSubmit={login}>
+          <div className={`Login__field--username ${errors.username ? "error" : ""}`}>
+            <label className="Login__label" htmlFor="username">
               Username<span>{errors.username}</span>
             </label>
             <input
@@ -92,8 +92,8 @@ function Login(props) {
               value={creds.username}
             ></input>
           </div>
-          <div className={`field password ${errors.password ? "error" : ""}`}>
-            <label htmlFor="password">
+          <div className={`Login__field--password ${errors.password ? "error" : ""}`}>
+            <label className="Login__label" htmlFor="password">
               Password <span>{errors.password}</span>
             </label>
             <input
@@ -105,7 +105,7 @@ function Login(props) {
               value={creds.password}
             ></input>
           </div>
-          <button>Login</button>
+          <button className="Login__button">Login</button>
         </form>
       </div>
     </div>

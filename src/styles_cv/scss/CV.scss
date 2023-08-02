@@ -1,0 +1,39 @@
+.CV {
+  // border: 1px solid green;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+
+  padding: 0 20px;
+  height: fit-content;
+  width: 800px;
+  margin: 40px auto;
+
+  font-size: 0.8rem;
+}
+
+.CV__cols {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.CV__n1 {
+  flex-basis: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // margin-right: 7.5px;
+}
+
+.CV__n2 {
+  flex-basis: 50%;
+  // margin-left: 7.5px;
+}
+
+.CV__n2 > * {
+  margin-bottom: 20px;
+}
+
+.CV__n2 > *:last-child {
+  margin-bottom: 0px;
+}

@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.ItemName i {
+.ItemName_i {
   width: 30px;
   height: 30px;
   display: flex;
@@ -41,7 +41,7 @@
 //   color: var(--color-f-tier3);
 // }
 
-.itemLabel {
+.ItemName__label {
   flex-shrink: 0;
   margin-left: 10px;
 }

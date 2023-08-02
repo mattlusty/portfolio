@@ -1,0 +1,25 @@
+.Page {
+  padding: 0 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.Page > .cols {
+  display: flex;
+  gap: 20px;
+}
+
+.Page .cols > .n1 {
+  flex-basis: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Page .cols > .n2 {
+  flex-basis: 50%;
+}
+
+.Page .n2 > * {
+  margin-bottom: 20px;
+}

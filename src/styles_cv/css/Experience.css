@@ -1,0 +1,28 @@
+.Experience__content {
+  padding-top: 5px;
+}
+
+.Experience__jobTitle {
+  font-weight: bolder;
+}
+
+.Experience__job {
+  padding-bottom: 10px;
+}
+
+.Experience__header {
+  margin: 15px 0px 10px;
+}
+
+.Experience__primary {
+  margin-bottom: -3px;
+}
+
+.Experience__job:last-child {
+  padding-bottom: 0px;
+}
+
+.Experience__ul {
+  list-style: disc;
+  padding-left: 15px;
+}

@@ -1,0 +1,44 @@
+.PortfolioList {
+  // border: 1px solid red;
+}
+
+.PortfolioList__content {
+  padding-top: 5px;
+  // padding-bottom: 20px;
+}
+
+.PortfolioList__job {
+  padding-bottom: 10px;
+}
+
+.PortfolioList__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  // margin-bottom: 10px;
+}
+
+.PortfolioList__jobTitle {
+  font-weight: bolder;
+}
+
+.PortfolioList__link {
+  font-style: italic;
+}
+
+// .PortfolioList__h3 {
+//   margin: 15px 0px 10px;
+// }
+
+.PortfolioList__primary {
+  margin-bottom: -3px;
+}
+
+.PortfolioList__job:last-child {
+  padding-bottom: 0px;
+}
+
+.PortfolioList__ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
