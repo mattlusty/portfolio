@@ -20,7 +20,7 @@ function Portfolio(props) {
           Make your clients money reach the moon today!
         </div>
       </div>
-      <div className="Portfolio__item" onClick={() => navigate("iMind")}>
+      <div className="Portfolio__item" onClick={() => navigate("https://imind.netlify.app/")}>
         <div className="Portfolio__header">iMind Ventures</div>
         <div className="Portfolio__content">
           iMind is a web of positive ideas and connections for building successful and positive change. A platform to
